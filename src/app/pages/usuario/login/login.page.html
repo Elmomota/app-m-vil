@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="ultraviolet">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title color="blancohielo">Inicio de Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+<br><br>
+
+<ion-content [fullscreen]="true">
+  <ion-item><ion-input label="Nombre de Usuario" labelPlacement="floating" placeholder="Ingrese su nombre de usuario" [(ngModel)]="nameUser"></ion-input></ion-item>
+  <ion-item><ion-input type="password" label="Contraseña" labelPlacement="floating" placeholder="Ingrese su contraseña" [(ngModel)]="password"></ion-input></ion-item>
+  <ion-button color="purpuranegro" [routerLink]="['/home']">Iniciar sesión</ion-button>
+  <p color="blancohielo">
+    <a href="/forgot-password">¿Problemas con tu cuenta?</a>
+  </p>
+
+  <div class="separator"></div> <!-- Línea de separación -->
+
+  <p color="blancohielo" class="register">
+    ¿No tienes una cuenta?
+    <a href="/register"> Regístrate</a>
+  </p>
+  
+</ion-content>
