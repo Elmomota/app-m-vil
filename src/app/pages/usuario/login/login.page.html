@@ -9,9 +9,13 @@
 <br><br>
 
 <ion-content [fullscreen]="true">
-  <ion-item><ion-input label="Nombre de Usuario" labelPlacement="floating" placeholder="Ingresa tu nombre de usuario" [(ngModel)]="nameUser"></ion-input></ion-item>
-  <ion-item><ion-input type="password" label="Contraseña" labelPlacement="floating" placeholder="Ingresa tu contraseña" [(ngModel)]="password"></ion-input></ion-item>
-  <ion-button color="purpuranegro" [routerLink]="['/home']">Iniciar sesión</ion-button>
+  <ion-item>
+    <ion-input label="Nombre de Usuario" labelPlacement="floating" placeholder="Ingresa tu nombre de usuario" [(ngModel)]="nameUser"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type="password" label="Contraseña" value="NeverGonnaGiveYouUp" labelPlacement="floating" placeholder="Ingresa tu contraseña" [(ngModel)]="password"><ion-input-password-toggle slot="end"></ion-input-password-toggle></ion-input>
+  </ion-item>
+  <ion-button color="purpuranegro" (click)="irPagina()">Iniciar sesión</ion-button>
   <p color="blancohielo">
     <a href="/forgot-password">¿Problemas con tu cuenta?</a>
   </p>

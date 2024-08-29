@@ -36,12 +36,13 @@ export class LoginPage implements OnInit {
     await toast.present();
   }
   irPagina(){
-    let contex:NavigationExtras={
+    let navigationextras:NavigationExtras={
       state:{
         nombreUser:this.nameUser
       }
     }
-    this.router.navigate(['/home'],contex);
+    this.presentToast('bottom');
+    this.router.navigate(['/home'],navigationextras);
   }
 
 

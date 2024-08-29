@@ -13,13 +13,13 @@
     <ion-input type="email" label="Correo electonico" labelPlacement="floating" placeholder="Ingresa tu Correo electronico" [(ngModel)]="correoEle"></ion-input>
   </ion-item>
   <ion-item>
-    <ion-input label="Nombre de Usuario" labelPlacement="floating" placeholder="Ingresa un nombre de usuario" [(ngModel)]="newNameUser"></ion-input>
+    <ion-input label="Nombre de Usuario"  labelPlacement="floating" placeholder="Ingresa un nombre de usuario" [(ngModel)]="newNameUser"></ion-input>
   </ion-item>
   <ion-item>
-    <ion-input type="password" label="Contraseña" labelPlacement="floating" placeholder="Ingresa una contraseña" [(ngModel)]="newPassword"></ion-input>
+    <ion-input type="password" label="Contraseña" value="NeverGonnaGiveYouUp" labelPlacement="floating" placeholder="Ingresa una contraseña" [(ngModel)]="newPassword"><ion-input-password-toggle slot="end"></ion-input-password-toggle></ion-input>
   </ion-item>
   <ion-item>
-    <ion-input type="password" label=" Confirma la Contraseña" labelPlacement="floating" placeholder="Confirma la contraseña" [(ngModel)]="confiPassword"></ion-input>
+    <ion-input type="password" label=" Confirma la Contraseña" value="NeverGonnaGiveYouUp" labelPlacement="floating" placeholder="Confirma la contraseña" [(ngModel)]="confiPassword"><ion-input-password-toggle slot="end"></ion-input-password-toggle></ion-input>
   </ion-item>
   <ion-button color="purpuranegro" (click)="validarRegistro()">Registrarse</ion-button>
   <div class="separator"></div> <!-- Línea de separación -->

@@ -1,11 +1,52 @@
-<ion-header [translucent]="true">
+
+<ion-header >
   <ion-toolbar>
-    <ion-title>home</ion-title>
+    <ion-buttons slot="start">
+      <ion-icon name="search-outline"></ion-icon>
+    </ion-buttons>
+    <ion-title>Bienvenido de vuelta {{user}}</ion-title>
+    <ion-avatar slot="end">
+      <img src="assets/icon/user-circle-svgrepo-com.png" alt="Avatar">
+    </ion-avatar>
   </ion-toolbar>
 </ion-header>
+<ion-content>
+  
+  <section class="categories-section">
+    <ion-list-header>
+      <ion-label>Categorias</ion-label>
+    </ion-list-header>
+    <ion-chip color="purpuraclaro">Accion</ion-chip>
+    <ion-chip color="purpuraclaro">Shooter</ion-chip>
+    <ion-chip color="purpuraclaro">Battle Royale</ion-chip>
+    <ion-chip color="purpuraclaro">Fighting</ion-chip>
+    <ion-chip color="purpuraclaro">Sports</ion-chip>
+    <ion-chip color="purpuraclaro">MOBA</ion-chip>
+  </section>
 
-<ion-content [fullscreen]="true">
-  <h2><b>Bienveniso devuela</b></h2>
-  <p>{{user}}</p>
+  
+ <section class="trending-games-section">
+    <ion-list-header>
+      <ion-label>🏆Torneos🏆</ion-label>
+      <ion-button fill="clear" size="small">Ver más</ion-button>
+    </ion-list-header>
+
+    <div class="horizontal-scroll">
+      <div class="game-item">
+        <img src="assets/img/valorant.jpg" alt="Valorant" />
+      </div>
+
+      <div class="game-item">
+        <img src="assets/img/fornite.jpg" alt="Fortnite" />
+      </div>
+      <div class="game-item">
+        <img src="assets/img/lol2.jpg" alt="league of legends" />
+      </div>
+      <div class="game-item">
+        <img src="assets/img/Street-Fighter-6.jpg" alt="Street Fighter" />
+      </div>
+    </div>
+  </section>
+ 
 
 </ion-content>

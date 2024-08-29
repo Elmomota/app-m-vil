@@ -1,0 +1,40 @@
+
+  ion-scroll {
+    white-space: nowrap;
+  }
+  .horizontal-scroll {
+    display: flex;
+    overflow-x: auto;
+  }
+  
+
+  ion-header, ion-footer {
+    --background: #1a1a2e;
+    color: white;
+  }
+  
+  ion-content {
+    --background: #0f0f1a;
+    color: white;
+    padding: 10px;
+  }
+  .categories-section ion-chip {
+    margin-right: 8px;
+     ;
+  }
+  .trending-games-section, .new-games-section {
+    margin-top: 20px;
+  }
+
+.game-item {
+    flex: 0 0 auto;
+    margin-right: 15px;
+    text-align: center;
+    min-width: 120px;
+  }
+  
+  .game-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+  }

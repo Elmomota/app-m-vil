@@ -49,6 +49,14 @@ export class RegisterPage implements OnInit {
     }
 
     this.irPagina();
+
+    await this.presentAlert('bienvenido', 'disfrura.');
+
+
+
+
+
+
   }
   irPagina(){
     let contex:NavigationExtras={
@@ -57,6 +65,7 @@ export class RegisterPage implements OnInit {
       }
     }
     this.router.navigate(['/home'],contex);
+
   }
 
 

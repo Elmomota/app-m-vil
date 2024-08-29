@@ -93,15 +93,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
 .ion-color-ultraviolet {
 	--ion-color-base: var(--ion-color-ultraviolet);
 	--ion-color-base-rgb: var(--ion-color-ultraviolet-rgb);
@@ -109,6 +100,30 @@
 	--ion-color-contrast-rgb: var(--ion-color-ultraviolet-contrast-rgb);
 	--ion-color-shade: var(--ion-color-ultraviolet-shade);
 	--ion-color-tint: var(--ion-color-ultraviolet-tint);
+}
+.ion-color-purpuraclaro {
+	--ion-color-base: var(--ion-color-purpuraclaro);
+	--ion-color-base-rgb: var(--ion-color-purpuraclaro-rgb);
+	--ion-color-contrast: var(--ion-color-purpuraclaro-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-purpuraclaro-contrast-rgb);
+	--ion-color-shade: var(--ion-color-purpuraclaro-shade);
+	--ion-color-tint: var(--ion-color-purpuraclaro-tint);
+}
+.ion-color-purpuraoscuro {
+	--ion-color-base: var(--ion-color-puxrpuraoscuro);
+	--ion-color-base-rgb: var(--ion-color-purpuraoscuro-rgb);
+	--ion-color-contrast: var(--ion-color-purpuraoscuro-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-purpuraoscuro-contrast-rgb);
+	--ion-color-shade: var(--ion-color-purpuraoscuro-shade);
+	--ion-color-tint: var(--ion-color-purpuraoscuro-tint);
+}
+.ion-color-purpuranegro {
+	--ion-color-base: var(--ion-color-purpuranegro);
+	--ion-color-base-rgb: var(--ion-color-purpuranegro-rgb);
+	--ion-color-contrast: var(--ion-color-purpuranegro-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-purpuranegro-contrast-rgb);
+	--ion-color-shade: var(--ion-color-purpuranegro-shade);
+	--ion-color-tint: var(--ion-color-purpuranegro-tint);
 }
 .ion-color-rosaneon {
 	--ion-color-base: var(--ion-color-rosaneon);
@@ -143,16 +158,6 @@
 	--ion-color-shade: var(--ion-color-blancohielo-shade);
 	--ion-color-tint: var(--ion-color-blancohielo-tint);
 }
-
-.ion-color-purpuraoscuro {
-	--ion-color-base: var(--ion-color-purpuraoscuro);
-	--ion-color-base-rgb: var(--ion-color-purpuraoscuro-rgb);
-	--ion-color-contrast: var(--ion-color-purpuraoscuro-contrast);
-	--ion-color-contrast-rgb: var(--ion-color-purpuraoscuro-contrast-rgb);
-	--ion-color-shade: var(--ion-color-purpuraoscuro-shade);
-	--ion-color-tint: var(--ion-color-purpuraoscuro-tint);
-}
-
 .ion-color-casiblanco {
 	--ion-color-base: var(--ion-color-casiblanco);
 	--ion-color-base-rgb: var(--ion-color-casiblanco-rgb);
@@ -168,12 +173,4 @@
 	--ion-color-contrast-rgb: var(--ion-color-rojoneon-contrast-rgb);
 	--ion-color-shade: var(--ion-color-rojoneon-shade);
 	--ion-color-tint: var(--ion-color-rojoneon-tint);
-}
-.ion-color-purpuranegro {
-	--ion-color-base: var(--ion-color-purpuranegro);
-	--ion-color-base-rgb: var(--ion-color-purpuranegro-rgb);
-	--ion-color-contrast: var(--ion-color-purpuranegro-contrast);
-	--ion-color-contrast-rgb: var(--ion-color-purpuranegro-contrast-rgb);
-	--ion-color-shade: var(--ion-color-purpuranegro-shade);
-	--ion-color-tint: var(--ion-color-purpuranegro-tint);
 }
