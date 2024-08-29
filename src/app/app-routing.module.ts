@@ -44,7 +44,11 @@ const routes: Routes = [
   {
     path: 'league-of-legends',
     loadChildren: () => import('./pages/games/league-of-legends/league-of-legends.module').then( m => m.LeagueOfLegendsPageModule)
+  },  {
+    path: 'cuenta',
+    loadChildren: () => import('./pages/usuario/cuenta/cuenta.module').then( m => m.CuentaPageModule)
   },
+
   
 
 

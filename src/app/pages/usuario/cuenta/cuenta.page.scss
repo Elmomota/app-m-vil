@@ -1,0 +1,97 @@
+#icono-user {
+    font-size: 100px;
+  }
+
+
+
+
+
+  ion-tab-bar {
+    background: #60eea7; /* Color de fondo del tab bar */
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    border-top-left-radius: 20px; /* Redondea la esquina superior izquierda */
+    border-top-right-radius: 20px; /* Redondea la esquina superior derecha */
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.3); /* Añade una sombra para resaltar el tab bar */
+  }
+
+
+
+
+  ion-tab-button {
+    background-color: #ec50ec; /* Color de fondo para cada tab */
+    border-radius: 40%; /* Hace los tabs redondos */
+    margin: 0 10px; /* Espacio entre los tabs */
+    padding: 10px;
+    width: 50px; /* Ancho del tab */
+    height: 50px; /* Alto del tab */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: transform 0.3s ease;
+  }
+
+
+  ion-content {
+    --background: #2e2f3a;
+    color: #fff;
+  }
+  
+  .profile-header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .avatar-large {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  
+  .profile-info h2 {
+    margin: 10px 0 5px;
+  }
+  
+  .profile-info p {
+    margin: 0;
+  }
+  
+  .badges {
+    margin: 15px 0;
+  }
+  
+  ion-segment {
+    margin: 20px 0;
+  }
+  
+  .profile-stats {
+    text-align: center;
+  }
+  
+  ion-card {
+    --background: #3e3f4c;
+  }
+  
+  ion-card-title {
+    color: #fff;
+  }
+  
+  ion-slides {
+    height: 200px;
+  }
+  
+  ion-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+
+
+
+
+  
