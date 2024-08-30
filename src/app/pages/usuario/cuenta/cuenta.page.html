@@ -2,22 +2,20 @@
 
   <ion-toolbar>
 
+    <ion-title>Tu cuenta</ion-title>
 
 
-    <ion-title>Tu cuenta
-    </ion-title>
-    <ion-title>
-      
-    </ion-title>
     <ion-buttons slot="end">
       <ion-button>
-        <ion-icon name="ellipsis-horizontal-circle-outline"></ion-icon>      </ion-button>
+        <ion-icon name="ellipsis-horizontal-circle-outline"></ion-icon> </ion-button>
     </ion-buttons>
-
-
 
   </ion-toolbar>
 
+
+       <div class="imagen-container">
+          <img src="assets/img/Street-Fighter-6.jpg" alt="Street Fighter" />
+      </div>
 </ion-header>
 
 
@@ -33,31 +31,32 @@
 
 
 
-<ion-content [fullscreen]="true">
+<ion-content class="general" [fullscreen]="true" >
 
-  <div class="profile-header">
-    <ion-avatar class="avatar-large">
+
+
+
+
+
+  <div class="div-cambiante">
+  <div class="div-foto" >
+
+
+    <ion-avatar class="avatar">
       <ion-icon id="icono-user" name="person-circle-outline" ></ion-icon></ion-avatar>
-    <div class="profile-info">
-
-      <p>New York, USA</p>
+    <div class="info-perfil">
+      <p>Nelson Zarate</p>
     </div>
-    <div class="badges">
+    <div class="juegos-per">
       <ion-chip color="primary">Valorant</ion-chip>
       <ion-chip color="secondary">Call of Duty</ion-chip>
       <ion-chip color="tertiary">Apex</ion-chip>
     </div>
-    <ion-segment value="info">
-      <ion-segment-button value="info">
-        <ion-label>Info</ion-label>
-      </ion-segment-button>
-      <ion-segment-button value="about">
-        <ion-label>About</ion-label>
-      </ion-segment-button>
-      <ion-segment-button value="video">
-        <ion-label>Video</ion-label>
-      </ion-segment-button>
-    </ion-segment>
+
+
+      <hr />
+
+
     <ion-row class="profile-stats">
       <ion-col>
         <h3>1K</h3>
@@ -74,18 +73,93 @@
     </ion-row>
   </div>
 
-  <ion-card>
+
+
+    <ion-segment value="info">
+      <ion-segment-button value="info">
+        <ion-label style="white-space: pre-line">Torneos jugados</ion-label >
+
+      </ion-segment-button>
+      <ion-segment-button value="about">
+        <ion-label>About</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="video">
+        <ion-label>Video</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+
+
+
+
+
+
+
+
+
+  <ion-card-title class="titulo-torneos">Torneos Jugados</ion-card-title >
+  <ion-card id="torneos">
+
     <ion-card-header>
-      <ion-card-title>Recent Streams</ion-card-title>
+    <h6 class="titulo-torneos">Juegos:</h6 >
     </ion-card-header>
 
-    <ion-card-content>
-<h1></h1>
+    <ion-card-content class="historial">
+
+
+
+
+      <div class="horizontal-scroll">
+        <div class="game-item">
+          <img src="assets/img/valorant.jpg" alt="Valorant" />
+        </div>
+  
+        <div class="game-item">
+          <img src="assets/img/fornite.jpg" alt="Fortnite" />
+        </div>
+        <div class="game-item">
+          <img src="assets/img/lol2.jpg" alt="league of legends" />
+        </div>
+        <div class="game-item">
+          <img src="assets/img/Street-Fighter-6.jpg" alt="Street Fighter" />
+        </div>
+      </div>
     </ion-card-content>
 
   </ion-card>
 
 
 
+
+
+
+<hr />
+
+
+
+
+
+<ion-card-title class="titulo-torneos">Descripcion:</ion-card-title >
+
+<ion-card>
+
+
+<p>Lorem ipsum dolor, 
+  sit amet consectetur adipisicing 
+  elit. Error placeat excepturi officiis
+   rem non fuga laudantium id unde nobis expedita,
+    ipsam magni dolore ea deleniti sunt odit minus 
+    similique quam.Lorem ipsum dolor, 
+    sit amet consectetur adipisicing 
+    elit. Error placeat excepturi officiis
+     rem non fuga laudantium id unde nobis expedita,
+      ipsam magni dolore ea deleniti sunt odit minus 
+      similique quam.</p>
+
+</ion-card>
+
+
+
+
+</div>
 
 </ion-content>

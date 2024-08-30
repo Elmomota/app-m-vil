@@ -1,10 +1,123 @@
-#icono-user {
-    font-size: 100px;
+ion-header {
+    position: relative; 
+    height: 200px; /* Aumenta la altura para que la imagen se vea */
+    overflow: hidden;
+    z-index: 1; /* Asegura que la imagen esté detrás */
+  }
+  
+  .imagen-container {
+    position: absolute; /* Posiciona la imagen de manera absoluta */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ajusta para cubrir todo el ancho */
+    z-index: 1; /* Asegura que la imagen esté detrás */
+    height: 300px; /* Ajusta el alto según sea necesario */
+    overflow: hidden; /* Evita que la imagen se salga de su contenedor */
   }
 
+  .div-cambiante {
+    position: relative; 
+    border-radius: 25px;
+    background-color: #2f3153;
+    position: relative; /* Permite controlar el apilamiento con z-index */
+    z-index: 2; /* Se coloca por encima de la imagen */
+    }
 
 
 
+
+    #icono-user {
+        font-size: 100px;
+        
+    }
+
+
+    #torneos {
+        border-radius: 30px;
+
+
+    }
+
+    .titulo-torneos {
+
+        padding-left: 10px;
+
+    }
+
+
+    .card-juegos {
+
+        padding: 100px;
+
+    }
+
+    .horizontal-scroll {
+        display: flex;
+        overflow-x: auto;
+        margin-bottom: 10;
+    }
+
+    .game-item {
+        flex: 0 0 auto;
+        margin-right: 15px;
+        text-align: center;
+        min-width: 120px;
+        size:small;
+    }
+    
+    .game-item img {
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+    }
+    .trending-games-section {
+        margin-top: 20px;
+
+
+        }
+
+
+
+        .info-perfil p {
+            margin: 0;
+        }
+
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+        }
+
+        .juegos-per {
+            margin: 15px 0;
+          }
+
+
+
+
+
+
+
+
+
+
+
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+-----------------------------------------------------------
+  
+ion-header {
+
+border-bottom-left-radius: 50px;
+
+}
 
   ion-tab-bar {
     background: #60eea7; /* Color de fondo del tab bar */
@@ -40,28 +153,19 @@
     color: #fff;
   }
   
-  .profile-header {
+  .div-foto {
     text-align: center;
     padding: 20px;
   }
   
-  .avatar-large {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-  }
+
   
   .profile-info h2 {
     margin: 10px 0 5px;
   }
   
-  .profile-info p {
-    margin: 0;
-  }
+
   
-  .badges {
-    margin: 15px 0;
-  }
   
   ion-segment {
     margin: 20px 0;
