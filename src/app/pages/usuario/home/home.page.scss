@@ -5,14 +5,8 @@
   .horizontal-scroll {
     display: flex;
     overflow-x: auto;
-  }
-  
-
-  ion-header, ion-footer {
-    --background: #1a1a2e;
-    color: white;
-  }
-  
+    scrollbar-width: none;
+  }  
   ion-content {
     --background: #0f0f1a;
     color: white;

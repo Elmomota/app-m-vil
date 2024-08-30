@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, NavigationExtras, Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -23,5 +23,29 @@ export class HomePage implements OnInit {
 
   ngOnInit() {
   }
+  Ircuenta(){
+    let navigationextras:NavigationExtras={
+      state:{ 
+      }
+    }
+    this.router.navigate(['/cuenta'],navigationextras);
+  }
+  
 
+
+
+  Valorant(){
+    this.router.navigate(['/valorant']);
+  }
+  Fortnite(){
+    this.router.navigate(['/fortnite']);
+  }
+  LOL(){
+    this.router.navigate(['/league-of-legends']);
+  }
+  Sf(){
+    this.router.navigate(['/street-fighter']);
+  }
+
+  
 }

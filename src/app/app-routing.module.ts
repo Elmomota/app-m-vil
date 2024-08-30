@@ -48,6 +48,10 @@ const routes: Routes = [
     path: 'cuenta',
     loadChildren: () => import('./pages/usuario/cuenta/cuenta.module').then( m => m.CuentaPageModule)
   },
+  {
+    path: 'inicio',
+    loadChildren: () => import('./pages/app/inicio/inicio.module').then( m => m.InicioPageModule)
+  },
 
   
 

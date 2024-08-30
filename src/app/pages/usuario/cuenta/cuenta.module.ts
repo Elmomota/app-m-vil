@@ -8,6 +8,7 @@ import { CuentaPageRoutingModule } from './cuenta-routing.module';
 
 import { CuentaPage } from './cuenta.page';
 
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +16,6 @@ import { CuentaPage } from './cuenta.page';
     IonicModule,
     CuentaPageRoutingModule
   ],
-  declarations: [CuentaPage]
+  declarations: [CuentaPage ]
 })
 export class CuentaPageModule {}

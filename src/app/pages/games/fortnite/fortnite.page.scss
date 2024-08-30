@@ -1,0 +1,101 @@
+ion-header {
+    position: relative;
+    height: 300px;
+    background-color: #1f1f2e;
+    z-index: 0;
+  }
+
+  ion-content {
+    position: absolute;
+    margin-top:-150 ;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .imagen-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+    
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .imagen-container img {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;  
+    z-index: 0;
+  }
+  
+  .stats-container {
+    position: relative;
+    top: -80px;
+    background-color: #2e2f3a;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 0 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .game-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .game-stats ion-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .game-stats h3 {
+    font-size: 1.5em;
+    margin: 0;
+  }
+  
+  .game-description {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #cfcfcf;
+  }
+  
+  .lives-container {
+    margin-top: 20px;
+    background-color: #1f1f2e;
+    border-radius: 25px;
+    padding: 20px;
+    color: white;
+  }
+  
+  .horizontal-scroll {
+    display: flex;
+    overflow-x: auto;
+  }
+  
+  .live-item {
+    flex: 0 0 auto;
+    margin-right: 15px;
+    min-width: 200px;
+  }
+  
+  .live-item img {
+    width: 100%;
+    height: 120px;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+  
+
+
+  hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
