@@ -5,11 +5,22 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './cuenta.page.html',
   styleUrls: ['./cuenta.page.scss'],
 })
+
+
+
 export class CuentaPage implements OnInit {
+  ngOnInit(){}
+  constructor(){}
 
-  constructor() { }
 
-  ngOnInit() {
-  }
+
+seleccion = 'Torneos jugados';
+
+
+
+
+
+
+
 
 }

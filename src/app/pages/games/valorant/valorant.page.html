@@ -1,71 +1,158 @@
-<ion-header [translucent]="true">
-  <ion-card>
+<ion-content class="general" [fullscreen]="true" >
+ 
+
   <div class="imagen-container">
-    <img src="assets/img/valo-h.jpg" alt="Valorant" />
+    <img src="assets/img/valo-h.jpg" alt="Street Fighter" />
   </div>
+
   
-</ion-card>
-</ion-header>
+  <div>
+
+  
+
+  <div class="div-cambiante">
+   <div class="div-foto" >
+    
+    <ion-button fill="clear" class="icono-config">
+
+      
+        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+    
 
 
+    </ion-button>
 
+    <ion-button fill="clear" class="icono-atras">
 
-<ion-content [fullscreen]="true">
-  <div class="stats-container">
-    <h1 class="game-title">Valorant</h1>
-    <div class="game-stats">
-      <ion-row>
-        <ion-col>
-          <h3>13M</h3>
-          <p>Followers</p>
-        </ion-col>
-        <ion-col>
-          <h3>50.6K</h3>
-          <p>Matches</p>
-        </ion-col>
-        <ion-col>
-          <h3>1.8K</h3>
-          <p>Streamers</p>
-        </ion-col>
-      </ion-row>
+      
+      <ion-icon name="arrow-back-circle-outline"></ion-icon>
+
+  </ion-button>
+
+  
+
+    
+    <div class="info-perfil">
+     <h1>Valorant</h1>
     </div>
-    <p class="game-description">
-      Valorant es un juego de disparos en primera persona desarrollado y publicado por ... 
-      <a href="#">Leer más</a>
-    </p>
+
+
+
+    <div class="juegos-per">
+      <ion-chip [disabled]="true" color="primary">Shooters</ion-chip>
+      <ion-chip [disabled]="true" color="secondary">Tactica</ion-chip>
+      <ion-chip [disabled]="true" color="tertiary">Equipos</ion-chip>
+
+
+    </div>
+
+
+      <hr />
+
+
+    <ion-row class="profile-stats">
+      <ion-col>
+        <h3>9</h3>
+        <p>Torneos en linea</p>
+      </ion-col>
+      <ion-col>
+        <h3>420 BZ</h3>
+        <p>Premio acumulado</p>
+      </ion-col>
+      <ion-col>
+        <h3>10</h3>
+        <p>Inscripcion</p>
+      </ion-col>
+    </ion-row>
   </div>
 
-  <ion-card class="lives-container">
+
+
+    <ion-segment value="info">
+      <ion-segment-button value="info">
+        <ion-label style="white-space: pre-line">Torneos jugados</ion-label >
+
+      </ion-segment-button>
+      <ion-segment-button value="about">
+        <ion-label>About</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="video">
+        <ion-label>Video</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+
+
+
+
+
+
+
+
+
+  <ion-card-title class="titulo-torneos">Torneos Jugados</ion-card-title >
+  <ion-card id="torneos">
+
     <ion-card-header>
-      <h2>Lives</h2>
-      <a href="#">Ver todo</a>
+    <h6 class="titulo-torneos">Juegos:</h6 >
     </ion-card-header>
-    <ion-card-content>
+
+    <ion-card-content class="historial">
+
+
+
+
       <div class="horizontal-scroll">
-        <div class="live-item">
-          <img src="assets/img/valorant-live1.jpg" alt="Live Stream 1" />
+        <div class="game-item">
+          <img src="assets/img/valorant.jpg" alt="Valorant" />
         </div>
-        <div class="live-item">
-          <img src="assets/img/valorant-live2.jpg" alt="Live Stream 2" />
+  
+        <div class="game-item">
+          <img src="assets/img/fornite.jpg" alt="Fortnite" />
+        </div>
+        <div class="game-item">
+          <img src="assets/img/lol2.jpg" alt="league of legends" />
+        </div>
+        <div class="game-item">
+          <img src="assets/img/Street-Fighter-6.jpg" alt="Street Fighter" />
         </div>
       </div>
     </ion-card-content>
+
   </ion-card>
 
 
 
 
-<hr>
 
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-  Atque consectetur, porro rem officia accusantium eveniet
-   iusto eum consequatur distinctio praesentium labore accusamus
-    alias quod placeat. Veritatis soluta nisi neque. Amet?Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-    Atque consectetur, porro rem officia accusantium eveniet
-     iusto eum consequatur distinctio praesentium labore accusamus
-      alias quod placeat. Veritatis soluta nisi neque. Amet?</p>
+
+<hr />
 
 
 
 
+
+<ion-card-title class="titulo-torneos">Descripcion:</ion-card-title >
+
+<ion-card>
+
+
+<p>Lorem ipsum dolor, 
+  sit amet consectetur adipisicing 
+  elit. Error placeat excepturi officiis
+   rem non fuga laudantium id unde nobis expedita,
+    ipsam magni dolore ea deleniti sunt odit minus 
+    similique quam.Lorem ipsum dolor, 
+    sit amet consectetur adipisicing 
+    elit. Error placeat excepturi officiis
+     rem non fuga laudantium id unde nobis expedita,
+      ipsam magni dolore ea deleniti sunt odit minus 
+      similique quam.</p>
+
+</ion-card>
+
+
+
+
+  </div>
+</div>
 </ion-content>

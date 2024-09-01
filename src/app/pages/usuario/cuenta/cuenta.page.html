@@ -1,142 +1,142 @@
-<ion-header [translucent]="true">
-
-  <ion-toolbar>
-
-    <ion-title>Tu cuenta</ion-title>
-
-
-    <ion-buttons slot="end">
-      <ion-button>
-        <ion-icon name="ellipsis-horizontal-circle-outline"></ion-icon> </ion-button>
-    </ion-buttons>
-
-  </ion-toolbar>
-
-
-       <div class="imagen-container">
-          <img src="assets/img/Street-Fighter-6.jpg" alt="Street Fighter" />
-      </div>
-</ion-header>
-
-
-
-
-
-
-
-
-
------------------------------------------------
-
-
-
-
 <ion-content class="general" [fullscreen]="true" >
+ 
+  <!------Imagen atras------------------------------------------------------------------------------------------------>
 
 
-
-
-
-
-  <div class="div-cambiante">
-  <div class="div-foto" >
-
-
-    <ion-avatar class="avatar">
-      <ion-icon id="icono-user" name="person-circle-outline" ></ion-icon></ion-avatar>
-    <div class="info-perfil">
-      <p>Nelson Zarate</p>
-    </div>
-    <div class="juegos-per">
-      <ion-chip color="primary">Valorant</ion-chip>
-      <ion-chip color="secondary">Call of Duty</ion-chip>
-      <ion-chip color="tertiary">Apex</ion-chip>
-    </div>
-
-
-      <hr />
-
-
-    <ion-row class="profile-stats">
-      <ion-col>
-        <h3>1K</h3>
-        <p>Posts</p>
-      </ion-col>
-      <ion-col>
-        <h3>420K</h3>
-        <p>Followers</p>
-      </ion-col>
-      <ion-col>
-        <h3>95</h3>
-        <p>Following</p>
-      </ion-col>
-    </ion-row>
+  <div class="imagen-container">
+    <img src="assets/img/Street-Fighter-6.jpg" alt="Street Fighter" />
   </div>
 
+  <!------------------------------------------------------------------------------------------------------>
+  <!------------bloque grande----------------------------------------------------------------------------->
+  <!------------------------------------------------------------------------------------------------------>
 
 
-    <ion-segment value="info">
-      <ion-segment-button value="info">
-        <ion-label style="white-space: pre-line">Torneos jugados</ion-label >
+  <div class="div-grande">
 
-      </ion-segment-button>
-      <ion-segment-button value="about">
-        <ion-label>About</ion-label>
-      </ion-segment-button>
-      <ion-segment-button value="video">
-        <ion-label>Video</ion-label>
-      </ion-segment-button>
-    </ion-segment>
+      <div class="div-foto-perfil" >
 
 
+          <ion-button fill="clear" class="icono-config">
+              <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+          </ion-button>
+
+  <!-----icono y nombre--------------------------------->
+
+          <ion-avatar class="avatar">
+            <ion-icon id="icono-user" name="person-circle-outline" ></ion-icon>
+          </ion-avatar>
+
+          <div class="info-perfil">
+            <h4>SRCHITITA</h4>
+          </div>
+
+
+  <!---chips juegos main--------------->
+
+          <div class="juegos-per">
+            <ion-chip color="primary">Valorant</ion-chip>
+            <ion-chip color="secondary">LoL</ion-chip>
+            <ion-chip color="tertiary">Street figter</ion-chip>
+          </div>
+
+
+<!------------------------------------------------------------------------------------------------------>
+            <hr />
+<!------------------------------------------------------------------------------------------------------>
+
+
+
+          <ion-row class="profile-stats">
+
+            <ion-col>
+              <h3>12</h3>
+              <ion-icon class="iconos-stats" name="trophy"></ion-icon></ion-col >
+
+            <ion-col>
+              <h3>420K</h3>
+              <p>Followers</p>
+            </ion-col>
+
+            <ion-col>
+              <h3>95</h3>
+              <p>Following</p>
+            </ion-col>
+
+        </ion-row>
+      </div>
+
+
+
+          <ion-segment [(ngModel)]="seleccion">
+
+
+            <ion-segment-button value='Torneos jugados'>
+              <ion-label style="white-space: pre-line">Torneos jugados</ion-label >
+            </ion-segment-button>
+
+
+            <ion-segment-button value='Historial'>
+                <ion-label>Historial</ion-label>
+            </ion-segment-button>
+
+
+            <ion-segment-button value='Logros'>
+                <ion-label>Logros</ion-label>
+            </ion-segment-button>
+
+          </ion-segment>
+
+
+          <div *ngIf="seleccion == 'Torneos jugados'">
+            <ion-card-title class="titulo-torneos">Torneos jugados</ion-card-title >
+          </div>
+
+
+          <div *ngIf="seleccion == 'Historial'">
+            <ion-card-title class="titulo-torneos">Historial</ion-card-title >
+          </div>
+
+
+          <div *ngIf="seleccion == 'Logros'">
+            <ion-card-title class="titulo-torneos">Logros</ion-card-title >
+          </div>
 
 
 
 
 
+        <ion-card id="torneos">
+
+          <ion-card-header>
+          <h6 class="titulo-torneos">Juegos:</h6 >
+          </ion-card-header>
 
 
-  <ion-card-title class="titulo-torneos">Torneos Jugados</ion-card-title >
-  <ion-card id="torneos">
+        <!------card de torneos jugados------------------------------------------------------------------------------------------------>
+          <ion-card-content class="historial" *ngIf="seleccion == 'Torneos jugados'">
 
-    <ion-card-header>
-    <h6 class="titulo-torneos">Juegos:</h6 >
-    </ion-card-header>
-
-    <ion-card-content class="historial">
-
-
-
-
-      <div class="horizontal-scroll">
-        <div class="game-item">
-          <img src="assets/img/valorant.jpg" alt="Valorant" />
-        </div>
-  
-        <div class="game-item">
-          <img src="assets/img/fornite.jpg" alt="Fortnite" />
-        </div>
-        <div class="game-item">
-          <img src="assets/img/lol2.jpg" alt="league of legends" />
-        </div>
-        <div class="game-item">
-          <img src="assets/img/Street-Fighter-6.jpg" alt="Street Fighter" />
-        </div>
+            <div class="horizontal-scroll">
+              <div class="game-item">
+                <img src="assets/img/valorant.jpg" alt="Valorant" />
+              </div>
+        
+              <div class="game-item">
+                <img src="assets/img/fornite.jpg" alt="Fortnite" />
+              </div>
+              <div class="game-item">
+                <img src="assets/img/lol2.jpg" alt="league of legends" />
+              </div>
+              <div class="game-item">
+                <img src="assets/img/Street-Fighter-6.jpg" alt="Street Fighter" />
+              </div>
       </div>
     </ion-card-content>
 
   </ion-card>
+<!------------------------------------------------------------------------------------------------------>
 
-
-
-
-
-
-<hr />
-
-
-
-
+<hr/>
 
 <ion-card-title class="titulo-torneos">Descripcion:</ion-card-title >
 
@@ -160,6 +160,5 @@
 
 
 
-</div>
-
+  </div>
 </ion-content>
