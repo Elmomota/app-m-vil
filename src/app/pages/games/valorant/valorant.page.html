@@ -1,124 +1,148 @@
+
+
+
+
 <ion-content class="general" [fullscreen]="true" >
  
-
-  <div class="imagen-container">
+<!------------------------imagen detras------------------------------------------------------------------------------>
+<div class="imagen-container">
     <img src="assets/img/valo-h.jpg" alt="Street Fighter" />
-  </div>
+</div>
+<!------------------------------------------------------------------------------------------------------>
+<!--------------------------bloque grande---------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------>
+<div class="div-general">
+    <div class="div-cambiante">
+  <!--------------------------botones---------------------------------------------------------------------------->  
+      <div>
 
-  
-  <div>
-
-  
-
-  <div class="div-cambiante">
-   <div class="div-foto" >
-    
-    <ion-button fill="clear" class="icono-config">
-
-      
+        <ion-button fill="clear" class="icono-config">
         <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+        </ion-button>
+
+         <ion-button fill="clear" class="icono-atras" (click)="home()">
+            <ion-icon name="arrow-back-circle-outline"></ion-icon>
+         </ion-button>
+  
+
     
+          <div class="info-perfil">
+              <h1>Valorant</h1>
+          </div>
 
 
-    </ion-button>
 
-    <ion-button fill="clear" class="icono-atras">
+          <div class="juegos-per">
+            <ion-chip [disabled]="true" color="primary">Shooters</ion-chip>
+            <ion-chip [disabled]="true" color="secondary">Tactica</ion-chip>
+            <ion-chip [disabled]="true" color="tertiary">Equipos</ion-chip>
+          </div>
 
+          </div>
+
+
+          <hr/>
+          <ion-card-title class="titulo-torneos">Descripcion:</ion-card-title>
+
+
+            <p class="descripcion">Valorant es un videojuego de 
+              disparos en primera persona (FPS) desarrollado 
+              y publicado por Riot Games. El juego combina elementos de los shooters tácticos 
+               con habilidades y poderes especiales.
+             </p>
+            
+              <hr/>
+
+
+
+
+              <div id="torneos">
+                <ion-card-content class="torneos">
       
-      <ion-icon name="arrow-back-circle-outline"></ion-icon>
+                <div class="scroll">
+      
+      <!------items------------------------------------------------------------------------------------------------>
+      <!------------------------------------------------------------------------------------------------------>
+                    <div class="game-item">
+                      <div class="distribucion">
+      
+                        <img class="imagen-torneos-jugados" src="assets/img/valorant.jpg" alt="Valorant" />
+      
+                        <div class="texto">
+                          <h6>Copa Soprole</h6>
+                          <p>Eliminacion directa</p>
+                          <p>Entrada:gratis</p>
+                          <P>Fecha: 14/04/202</P>
+      
+                        </div>
+      
+                          
+                        </div>
+                    </div>
+      <!------------------------------------------------------------------------------------------------------>
+      <hr>
+      <!------------------------------------------------------------------------------------------------------>
+      
+                    <div class="game-item">
+                      <div class="distribucion">
+      
+                        <img class="imagen-torneos-jugados" src="assets/img/valorant.jpg" alt="Valorant" />
+      
+                        <div class="texto">
+                          <h6>Copa Marinela</h6>
+                          <p>Eliminacion directa</p>
+                          <p>Entrada:gratis</p>
+                          <P>Fecha: 14/04/202</P>
+      
+                        </div>
+                      </div>
 
-  </ion-button>
-
-  
-
-    
-    <div class="info-perfil">
-     <h1>Valorant</h1>
-    </div>
-
-
-
-    <div class="juegos-per">
-      <ion-chip [disabled]="true" color="primary">Shooters</ion-chip>
-      <ion-chip [disabled]="true" color="secondary">Tactica</ion-chip>
-      <ion-chip [disabled]="true" color="tertiary">Equipos</ion-chip>
-
-
-    </div>
-
-
-      <hr />
-
-
-    <ion-row class="profile-stats">
-      <ion-col>
-        <h3>9</h3>
-        <p>Torneos en linea</p>
-      </ion-col>
-      <ion-col>
-        <h3>420 BZ</h3>
-        <p>Premio acumulado</p>
-      </ion-col>
-      <ion-col>
-        <h3>10</h3>
-        <p>Inscripcion</p>
-      </ion-col>
-    </ion-row>
-  </div>
-
-
-
-    <ion-segment value="info">
-      <ion-segment-button value="info">
-        <ion-label style="white-space: pre-line">Torneos jugados</ion-label >
-
-      </ion-segment-button>
-      <ion-segment-button value="about">
-        <ion-label>About</ion-label>
-      </ion-segment-button>
-      <ion-segment-button value="video">
-        <ion-label>Video</ion-label>
-      </ion-segment-button>
-    </ion-segment>
-
-
-
-
-
-
-
-
-
-  <ion-card-title class="titulo-torneos">Torneos Jugados</ion-card-title >
-  <ion-card id="torneos">
-
-    <ion-card-header>
-    <h6 class="titulo-torneos">Juegos:</h6 >
-    </ion-card-header>
-
-    <ion-card-content class="historial">
-
-
-
-
-      <div class="horizontal-scroll">
-        <div class="game-item">
-          <img src="assets/img/valorant.jpg" alt="Valorant" />
+                    </div>
+      <!------------------------------------------------------------------------------------------------------>
+      <hr>
+      <!------------------------------------------------------------------------------------------------------>
+                    <div class="game-item">
+                      <div class="distribucion">
+                        
+                        <img class="imagen-torneos-jugados" src="assets/img/valorant.jpg" alt="Valorant" />
+      
+                        <div class="texto">
+                          <h6>Copa De la victoria</h6>
+                          <p>Eliminacion directa</p>
+                          <p>Entrada:gratis</p>
+                          <P>Fecha: 14/04/202</P>
+      
+                        </div>
+                          </div>
+      
+      
+                    </div>
+      <!------------------------------------------------------------------------------------------------------>
+      <hr>
+      <!------------------------------------------------------------------------------------------------------>
+      
+                    <div class="game-item">
+                      <div class="distribucion">
+      
+                        <img class="imagen-torneos-jugados" src="assets/img/valorant.jpg" alt="Valorant" />
+      
+                        <div class="texto">
+                          <h6>Copa Soprole</h6>
+                          <p>Eliminacion directa</p>
+                          <p>Puesto:5°</p>
+                          <P>Fecha: 14/04/202</P>
+      
+                        </div>
+                        </div>
+      
+      
+                    </div>
+      
+      
+            </div>
+          </ion-card-content>
+      
         </div>
-  
-        <div class="game-item">
-          <img src="assets/img/fornite.jpg" alt="Fortnite" />
-        </div>
-        <div class="game-item">
-          <img src="assets/img/lol2.jpg" alt="league of legends" />
-        </div>
-        <div class="game-item">
-          <img src="assets/img/Street-Fighter-6.jpg" alt="Street Fighter" />
-        </div>
-      </div>
-    </ion-card-content>
-
-  </ion-card>
 
 
 
@@ -131,28 +155,6 @@
 
 
 
-<ion-card-title class="titulo-torneos">Descripcion:</ion-card-title >
-
-<ion-card>
-
-
-<p>Lorem ipsum dolor, 
-  sit amet consectetur adipisicing 
-  elit. Error placeat excepturi officiis
-   rem non fuga laudantium id unde nobis expedita,
-    ipsam magni dolore ea deleniti sunt odit minus 
-    similique quam.Lorem ipsum dolor, 
-    sit amet consectetur adipisicing 
-    elit. Error placeat excepturi officiis
-     rem non fuga laudantium id unde nobis expedita,
-      ipsam magni dolore ea deleniti sunt odit minus 
-      similique quam.</p>
-
-</ion-card>
-
-
-
-
-  </div>
+    </div>
 </div>
 </ion-content>

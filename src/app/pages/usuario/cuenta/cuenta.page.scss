@@ -1,19 +1,61 @@
 
 /////////////////////////////// principal /////////////////////////////////////////////
 
-
-
 ion-content {
   --background: #2e2f3a;
   color: #fff;
   }
+
+  ion-segment {
+    margin: 20px 0;
+  }
+
+  .torneos {
+    display: flex;
+    margin-bottom: 10;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+#torneos {
+  border-radius: 30px;
+}
+
+#historial {
+  border-radius: 30px;
+}
+
+.historial {
+  display: flex;
+  margin-bottom: 10;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+
+
+
+.game-item-historial{
+  flex: 0 0 auto;
+  margin-right: 15px;
+  width: 120px;
+  height: 50px;
+}
+
+.game-item {
+  flex: 0 0 auto;
+  margin-right: 15px;
+  min-width: 120px;
+  max-height: 300px;
+}
 
 
 .div-grande {
   background-color: #2f3153;
   top: 200px;
   position: relative;
-  border-radius: 25px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
   padding: 20px;
   text-align: center;
   }
@@ -22,19 +64,81 @@ ion-content {
     position: fixed;
     width: 100%;
     height: 30%;
-    overflow: hidden;
   
   }
 
 .imagen-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
   }
+
+  .distribucion{
+    display: flex;
+  }
+  
+
+  .distribucion-historial{
+    display: flex;
+    width: 200px;
+    overflow:auto;
+  }
+
 ////////////////////////////////////////////////////////////////////////////
 
 
 /////////////////cosas mas chiquitas///////////////////////////////////////////////////////////
+
+
+
+.icono-atras {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.imagen-torneos-jugados {
+  position: relative;
+
+}
+
+.imagen-historial{
+  position: relative;
+  width: 60%;
+  height: 30%;
+  border-radius: 40%;
+}
+
+
+.imagen-torneos-jugados img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.texto {
+position: relative;
+align-items: start;
+width: 300px;
+color: #fff;
+
+}
+
+.texto-h {
+  max-width: 200px;
+  color: #fff;
+
+  }
+
+
+.texto2 {
+  align-items: center;
+  width: 300px;
+  color: #fff;
+  
+  }
+
 
   .icono-config {
     position: absolute;
@@ -54,11 +158,6 @@ ion-content {
   }
 
 
-  #torneos {
-      border-radius: 30px;
-
-
-  }
 
   .titulo-torneos {
 
@@ -73,25 +172,12 @@ ion-content {
 
   }
 
-  .horizontal-scroll {
-      display: flex;
-      overflow-x: auto;
-      margin-bottom: 10;
-  }
-
-  .game-item {
-      flex: 0 0 auto;
-      margin-right: 15px;
-      text-align: center;
-      min-width: 120px;
-      size:small;
-  }
-  
   .game-item img {
       width: 150px;
       height: 150px;
       border-radius: 10px;
   }
+
   .trending-games-section {
       margin-top: 20px;
 
@@ -120,8 +206,8 @@ ion-content {
 ///-----------------------------------------------------------
 
 hr {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -131,13 +217,6 @@ hr {
 
 .profile-info h2 {
   margin: 10px 0 5px;
-}
-
-
-
-
-ion-segment {
-  margin: 20px 0;
 }
 
 .profile-stats {

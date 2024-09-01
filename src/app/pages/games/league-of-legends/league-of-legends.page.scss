@@ -1,101 +1,183 @@
-ion-header {
-    position: relative;
-    height: 300px;
-    background-color: #1f1f2e;
-    z-index: 0;
+
+
+ion-content {
+  --background: #2e2f3a;
+  color: #fff;
+}
+  
+.imagen-container {
+
+  position: fixed;
+  width: 100%;
+  height: 30%;
+  overflow: hidden;
+  
+}
+
+
+
+.torneos {
+  display: flex;
+  margin-bottom: 10;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+.imagen-container img {
+padding-top: 1;
+width: 100%;
+height: 100%;
+object-fit: cover;
+
+}
+
+.div-cambiante {
+  background-color: #2f3153;
+  top: 200px;
+  position: relative;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  padding: 20px;
+  text-align: center;
   }
 
-  ion-content {
+
+  .icono-config {
     position: absolute;
-    margin-top:-150 ;
-    position: relative;
-    z-index: 1;
+    top: 10px;
+    right: 20px;
   }
-  
-  .imagen-container {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: 0;
-    
-    width: 100%;
-    max-width: 600px;
+
+  .icono-atras {
+    position: absolute;
+    top: 10px;
+    left: 20px;
   }
-  
-  .imagen-container img {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    object-fit: cover;  
-    z-index: 0;
+
+  #icono-user {
+      font-size: 100px;
+      
   }
-  
-  .stats-container {
-    position: relative;
-    top: -80px;
-    background-color: #2e2f3a;
-    border-radius: 25px;
-    padding: 20px;
-    margin: 0 20px;
-    text-align: center;
-    color: white;
-  }
-  
-  .game-title {
-    font-size: 2em;
-    margin-bottom: 10px;
-  }
-  
-  .game-stats ion-row {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .game-stats h3 {
-    font-size: 1.5em;
-    margin: 0;
-  }
-  
-  .game-description {
-    margin-top: 20px;
-    font-size: 0.9em;
-    color: #cfcfcf;
-  }
-  
-  .lives-container {
-    margin-top: 20px;
-    background-color: #1f1f2e;
-    border-radius: 25px;
-    padding: 20px;
-    color: white;
-  }
-  
-  .horizontal-scroll {
-    display: flex;
-    overflow-x: auto;
-  }
-  
-  .live-item {
-    flex: 0 0 auto;
-    margin-right: 15px;
-    min-width: 200px;
-  }
-  
-  .live-item img {
-    width: 100%;
-    height: 120px;
-    border-radius: 15px;
-    object-fit: cover;
-  }
-  
 
 
-  hr {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  #torneos {
+      border-radius: 30px;
+
+
   }
+
+  .titulo-torneos {
+
+      padding-left: 10px;
+
+  }
+
+  .distribucion{
+    display: flex;
+  }
+
+  .card-juegos {
+
+      padding: 100px;
+
+  }
+
+
+
+  .game-item {
+      flex: 0 0 auto;
+      margin-right: 15px;
+      text-align: center;
+      min-width: 120px;
+      size:small;
+  }
+  
+  .game-item img {
+      width: 150px;
+      height: 150px;
+      border-radius: 10px;
+  }
+  .trending-games-section {
+      margin-top: 20px;
+
+
+      }
+
+      .info-perfil p {
+          margin: 0;
+      }
+
+
+      .avatar {
+          width: 100px;
+          height: 100px;
+          margin: 0 auto;
+      }
+
+      .juegos-per {
+          margin: 15px 0;
+        }
+
+
+
+  
+  
+-----------------------------------------------------------
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+-----------------------------------------------------------
+
+
+
+.profile-info h2 {
+  margin: 10px 0 5px;
+}
+
+.descripcion {
+padding: 20px;
+width: small;
+}
+
+
+ion-segment {
+  margin: 20px 0;
+}
+
+.profile-stats {
+  text-align: center;
+}
+
+ion-card {
+  --background: #3e3f4c;
+}
+
+ion-card-title {
+  color: #fff;
+}
+
+ion-slides {
+  height: 200px;
+}
+
+ion-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+
+

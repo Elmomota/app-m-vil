@@ -14,6 +14,13 @@
 
   <div class="div-grande">
 
+<!------------------botones------------------------------------------------------------------------------------>
+   
+    <ion-button fill="clear" class="icono-atras" (click)="home()">
+        <ion-icon name="arrow-back-circle-outline"></ion-icon>
+    </ion-button>
+<!------------------------------------------------------------------------------------------------------>
+
       <div class="div-foto-perfil" >
 
 
@@ -41,10 +48,14 @@
           </div>
 
 
+
+
+
 <!------------------------------------------------------------------------------------------------------>
             <hr />
 <!------------------------------------------------------------------------------------------------------>
 
+<!---------------------stats--------------------------------------------------------------------------------->
 
 
           <ion-row class="profile-stats">
@@ -60,13 +71,13 @@
 
             <ion-col>
               <h3>95</h3>
-              <p>Following</p>
+              <p>Jugados</p>
             </ion-col>
-
         </ion-row>
       </div>
+ <!----------------------------segmentos cambiantes-------------------------------------------------------------------------->
 
-
+ <!----------------------------1-------------------------------------------------------------------------->
 
           <ion-segment [(ngModel)]="seleccion">
 
@@ -87,73 +98,247 @@
 
           </ion-segment>
 
-
-          <div *ngIf="seleccion == 'Torneos jugados'">
-            <ion-card-title class="titulo-torneos">Torneos jugados</ion-card-title >
-          </div>
-
-
-          <div *ngIf="seleccion == 'Historial'">
-            <ion-card-title class="titulo-torneos">Historial</ion-card-title >
-          </div>
-
-
-          <div *ngIf="seleccion == 'Logros'">
-            <ion-card-title class="titulo-torneos">Logros</ion-card-title >
-          </div>
-
-
-
-
-
-        <ion-card id="torneos">
-
-          <ion-card-header>
-          <h6 class="titulo-torneos">Juegos:</h6 >
-          </ion-card-header>
-
-
-        <!------card de torneos jugados------------------------------------------------------------------------------------------------>
-          <ion-card-content class="historial" *ngIf="seleccion == 'Torneos jugados'">
-
-            <div class="horizontal-scroll">
-              <div class="game-item">
-                <img src="assets/img/valorant.jpg" alt="Valorant" />
-              </div>
-        
-              <div class="game-item">
-                <img src="assets/img/fornite.jpg" alt="Fortnite" />
-              </div>
-              <div class="game-item">
-                <img src="assets/img/lol2.jpg" alt="league of legends" />
-              </div>
-              <div class="game-item">
-                <img src="assets/img/Street-Fighter-6.jpg" alt="Street Fighter" />
-              </div>
-      </div>
-    </ion-card-content>
-
-  </ion-card>
 <!------------------------------------------------------------------------------------------------------>
 
-<hr/>
 
-<ion-card-title class="titulo-torneos">Descripcion:</ion-card-title >
+
+<!------------------------lo que cambia-------------------titulos----------------------------------------------------------->
+
+
+<div *ngIf="seleccion == 'Torneos jugados'">
+
+            <ion-card-title class="titulo-torneos">Torneos jugados</ion-card-title >
+</div>
+
+
+<div *ngIf="seleccion == 'Historial'">
+
+            <ion-card-title class="titulo-torneos">Historial</ion-card-title >
+</div>
+
+
+<div *ngIf="seleccion == 'Logros'">
+
+            <ion-card-title class="titulo-torneos">Logros</ion-card-title >
+</div>
+
+<!------------------------------------------------------------------------------------------------------>
+
+
+
+<!------------------------------------------------------------------------------------------------------>
+<!-----------------------------parte torneos------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------>
+
+<ion-card id="torneos">
+  <ion-card-content class="torneos" *ngIf="seleccion == 'Torneos jugados'">
+
+          <div>
+
+<!------items------------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------------------>
+              <div class="game-item">
+                <div class="distribucion">
+
+                  <img class="imagen-torneos-jugados" src="assets/img/valorant.jpg" alt="Valorant" />
+
+                  <div class="texto">
+                    <h6>Copa Soprole</h6>
+                    <p>Eliminacion directa</p>
+                    <p>Puesto:5°</p>
+                    <P>Fecha: 14/04/202</P>
+
+                  </div>
+
+                    
+                  </div>
+              </div>
+<!------------------------------------------------------------------------------------------------------>
+<hr>
+<!------------------------------------------------------------------------------------------------------>
+
+              <div class="game-item">
+                <div class="distribucion">
+
+                  <img class="imagen-torneos-jugados" src="assets/img/lol2.jpg" alt="Valorant" />
+
+                  <div class="texto">
+                    <h6>Copa Soprole</h6>
+                    <p>Eliminacion directa</p>
+                    <p>Puesto:5°</p>
+                    <P>Fecha: 14/04/202</P>
+
+                  </div>
+
+                  </div>
+
+
+              </div>
+<!------------------------------------------------------------------------------------------------------>
+<hr>
+<!------------------------------------------------------------------------------------------------------>
+              <div class="game-item">
+                <div class="distribucion">
+                  
+                  <img class="imagen-torneos-jugados" src="assets/img/fornite.jpg" alt="Valorant" />
+
+                  <div class="texto">
+                    <h6>Copa Soprole</h6>
+                    <p>Eliminacion directa</p>
+                    <p>Puesto:5°</p>
+                    <P>Fecha: 14/04/202</P>
+
+                  </div>
+                    </div>
+
+
+              </div>
+<!------------------------------------------------------------------------------------------------------>
+<hr>
+<!------------------------------------------------------------------------------------------------------>
+
+              <div class="game-item">
+                <div class="distribucion">
+
+                  <img class="imagen-torneos-jugados" src="assets/img/lol2.jpg" alt="Valorant" />
+
+                  <div class="texto">
+                    <h6>Copa Soprole</h6>
+                    <p>Eliminacion directa</p>
+                    <p>Puesto:5°</p>
+                    <P>Fecha: 14/04/202</P>
+
+                  </div>
+                  </div>
+
+
+              </div>
+
+
+          </div>
+  </ion-card-content>
+
+</ion-card>
+
+
+
+<!------------------------------------------------------------------------------------------------------>
+<!-----------------------------parte historial------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------>
+
+
+<ion-card id="torneos">
+  <ion-card-content class="historial" *ngIf="seleccion == 'Historial'">
+
+          <div>
+
+<!------items------------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------------------>
+              <div class="game-item-historial">
+                <div class="distribucion-historial">
+
+                  <img class="imagen-historial" src="assets/img/valorant.jpg" alt="Valorant" />
+
+                  <div class="texto-h">
+                    <h6>Valorant</h6>
+                    <p>Mapa:icebox</p>
+                    <p>Victoria</p>
+
+
+                  </div>
+
+                    
+                  </div>
+              </div>
+<!------------------------------------------------------------------------------------------------------>
+<hr>
+<!------------------------------------------------------------------------------------------------------>
+
+              <div class="game-item">
+                <div class="distribucion">
+
+                  <img class="imagen-torneos-jugados" src="assets/img/lol2.jpg" alt="Valorant" />
+
+                  <div class="texto">
+                    <h6>Valorant</h6>
+                    <p>Mapa:icebox</p>
+                    <p>Victoria</p>
+                    <P>Fecha: 14/04/202</P>
+
+                  </div>
+
+                  </div>
+
+
+              </div>
+<!------------------------------------------------------------------------------------------------------>
+<hr>
+<!------------------------------------------------------------------------------------------------------>
+              <div class="game-item">
+                <div class="distribucion">
+                  
+                  <img class="imagen-torneos-jugados" src="assets/img/fornite.jpg" alt="Valorant" />
+
+                  <div class="texto">
+                    <h6>Valorant</h6>
+                    <p>Mapa:icebox</p>
+                    <p>Victoria</p>
+                    <P>Fecha: 14/04/202</P>
+
+                  </div>
+                    </div>
+
+
+              </div>
+<!------------------------------------------------------------------------------------------------------>
+<hr>
+<!------------------------------------------------------------------------------------------------------>
+
+              <div class="game-item">
+                <div class="distribucion">
+
+                  <img class="imagen-torneos-jugados" src="assets/img/lol2.jpg" alt="Valorant" />
+
+                  <div class="texto">
+                    <h6>Valorant</h6>
+                    <p>Mapa:icebox</p>
+                    <p>Victoria</p>
+                    <P>Fecha: 14/04/202</P>
+
+                  </div>
+                  </div>
+
+
+              </div>
+
+
+          </div>
+  </ion-card-content>
+</ion-card>
+
+
+
+
+<!------------------------------------------------------------------------------------------------------>
+<hr/>
+<!------------------------------------------------------------------------------------------------------>
+
+
+
+
+
+
+<ion-card-title class="titulo-torneos">Descripcion Jugador:</ion-card-title >
 
 <ion-card>
 
-
-<p>Lorem ipsum dolor, 
-  sit amet consectetur adipisicing 
-  elit. Error placeat excepturi officiis
-   rem non fuga laudantium id unde nobis expedita,
-    ipsam magni dolore ea deleniti sunt odit minus 
-    similique quam.Lorem ipsum dolor, 
-    sit amet consectetur adipisicing 
-    elit. Error placeat excepturi officiis
-     rem non fuga laudantium id unde nobis expedita,
-      ipsam magni dolore ea deleniti sunt odit minus 
-      similique quam.</p>
+<div>
+<p class="texto2">Jugador con experiencia en videojuegos desde los 5 años de edad
+  , participante de varios de los torneos mas importantes de battle zone,
+  soy un activo tengo un estilo de juego agresivo y odio pararme a pensar las cosas mi
+  forma de jugar siempre ha sido apisonar a los demas llendo hacia adelante
+</p>
+</div>
 
 </ion-card>
 

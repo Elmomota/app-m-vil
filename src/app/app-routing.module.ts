@@ -53,6 +53,11 @@ const routes: Routes = [
     path: 'inicio',
     loadChildren: () => import('./pages/app/inicio/inicio.module').then( m => m.InicioPageModule)
   },
+  {
+    path: 'jugando',
+    loadChildren: () => import('./pages/torneos/jugando/jugando.module').then( m => m.JugandoPageModule)
+  },
+
 
   
 
