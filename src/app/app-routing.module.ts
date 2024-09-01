@@ -25,10 +25,7 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./pages/usuario/home/home.module').then( m => m.HomePageModule)
   },
-  {
-    path: 'torneos',
-    loadChildren: () => import('./pages/torneos/torneos/torneos.module').then( m => m.TorneosPageModule)
-  },
+  
   {
     path: 'valorant',
     loadChildren: () => import('./pages/games/valorant/valorant.module').then( m => m.ValorantPageModule)
@@ -57,6 +54,17 @@ const routes: Routes = [
     path: 'jugando',
     loadChildren: () => import('./pages/torneos/jugando/jugando.module').then( m => m.JugandoPageModule)
   },
+  {
+    path: 'torneo',
+    loadChildren: () => import('./pages/torneos/torneo/torneo.module').then( m => m.TorneoPageModule)
+  },
+  {
+    path: 'torneos',
+    loadChildren: () => import('./page/torneos/torneos/torneos.module').then( m => m.TorneosPageModule)
+  },
+
+  
+
 
 
   

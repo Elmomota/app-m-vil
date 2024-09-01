@@ -21,8 +21,29 @@ ion-content {
   border-radius: 30px;
 }
 
+#torneos-h {
+  display: flex;
+  flex-flow: column wrap;
+  overflow-y: hidden;
+}
+
+#torneos-h {
+  display: flex;
+  overflow-y: hidden;
+}
+
+#torneos-1 {
+  display: flex;
+  overflow-y: scroll;
+  align-items: center;
+
+}
+
+
 #historial {
   border-radius: 30px;
+  display: flex;
+  flex-flow: column wrap;
 }
 
 .historial {
@@ -30,25 +51,60 @@ ion-content {
   margin-bottom: 10;
   max-height: 500px;
   overflow-y: scroll;
+  display: flex;
+  flex-flow: column wrap;
 }
-
-
 
 
 .game-item-historial{
-  flex: 0 0 auto;
-  margin-right: 15px;
-  width: 120px;
-  height: 50px;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-flow: column wrap;
+  overflow: hidden;
+
 }
 
 .game-item {
-  flex: 0 0 auto;
   margin-right: 15px;
   min-width: 120px;
   max-height: 300px;
+  
 }
 
+.game-item-l {
+  display: flex;
+  margin-right: 15px;
+  min-width: 120px;
+  max-height: 200px;
+  overflow: hidden;
+  
+}
+
+.logros-orga {
+  font-size: 100px;
+  color: #fff;
+  display: flex;
+  flex-flow: wrap-reverse;
+  padding-left: 90px;
+
+
+}
+
+
+
+.item-logro {
+  font-size: 100px;
+  color: #fff;
+  overflow-y: hidden;
+
+}
+
+.logro {
+  font-size: 150px;
+  color: #fff;
+  padding: 20px;
+}
 
 .div-grande {
   background-color: #2f3153;
@@ -61,16 +117,19 @@ ion-content {
   }
 
 .imagen-container {
+    width: 30%;
     position: fixed;
     width: 100%;
     height: 30%;
   
   }
 
+
 .imagen-container img {
-    width: 100%;
-    height: 100%;
+    width: 30%;
     object-fit: fill;
+    width: 100%;
+    height: auto;
   }
 
   .distribucion{
@@ -80,9 +139,42 @@ ion-content {
 
   .distribucion-historial{
     display: flex;
-    width: 200px;
-    overflow:auto;
+    align-items: center; 
+    overflow: hidden;
+    justify-content: flex-start;
+    width: auto;
+    height: auto;
+    padding:10px;
+    
+
   }
+
+  .distribucion-historial img{
+    position: static;
+    width: 150px;
+    
+  }
+
+  .imagen-historial{
+    position: relative;
+    border-radius: 50%;
+    height: auto; 
+    margin-right: 10px; 
+
+
+    
+
+  }
+
+  .texto-h {
+
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 12px;
+    flex: 1;
+    
+    }
+  
 
 ////////////////////////////////////////////////////////////////////////////
 
@@ -102,18 +194,12 @@ ion-content {
 
 }
 
-.imagen-historial{
-  position: relative;
-  width: 60%;
-  height: 30%;
-  border-radius: 40%;
-}
-
 
 .imagen-torneos-jugados img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  padding-right: 20px;
 }
 
 
@@ -133,10 +219,10 @@ color: #fff;
 
 
 .texto2 {
-  align-items: center;
-  width: 300px;
+  border-radius: 50px;
+  width: 350px;
   color: #fff;
-  
+  padding: 20px;
   }
 
 
@@ -161,8 +247,7 @@ color: #fff;
 
   .titulo-torneos {
 
-      padding-left: 10px;
-
+padding-bottom: 20px;
   }
 
 

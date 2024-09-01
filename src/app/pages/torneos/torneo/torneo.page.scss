@@ -1,0 +1,271 @@
+
+/////////////////////////////// principal /////////////////////////////////////////////
+
+ion-content {
+    --background: #2e2f3a;
+    color: #fff;
+    }
+  
+    ion-segment {
+      margin: 20px 0;
+    }
+  
+    .torneos {
+      display: flex;
+      margin-bottom: 10;
+      max-height: 500px;
+      overflow-y: scroll;
+  }
+  
+  #torneos {
+    border-radius: 30px;
+  }
+  
+  #historial {
+    border-radius: 30px;
+  }
+  
+  .historial {
+    display: flex;
+    margin-bottom: 10;
+    max-height: 500px;
+    overflow-y: scroll;
+  }
+  
+  
+  
+  
+  .game-item-historial{
+    margin-right: 15px;
+    width: 120px;
+    height: 50px;
+  }
+  
+  .game-item {
+    margin-right: 15px;
+    min-width: 120px;
+    max-height: 300px;
+  }
+  
+  
+  .div-grande {
+    background-color: #2f3153;
+    top: 200px;
+    position: relative;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding: 20px;
+    text-align: center;
+    }
+  
+  .imagen-container {
+      position: fixed;
+      width: 100%;
+      height: 30%;
+    
+    }
+  
+  .imagen-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+  
+    .distribucion{
+      display: flex;
+    }
+    
+  
+    .distribucion-historial{
+      display:baseline;
+      width: 200px;
+      overflow:auto;
+      align-items: start;
+  
+    }
+  
+    .distribucion-historial img{
+      position: static;
+      width: 150px;
+      padding-right: 20px;
+    }
+  
+    .imagen-historial{
+      position: relative;
+      border-radius: 40%;
+    }
+  
+    .texto-h {
+      position: relative;
+      color: #fff;
+      padding-left: 20px;
+      padding-bottom: 20px;
+      }
+    
+      .descripcion-j {
+        margin: 15px 0;
+        border-radius: 50px;
+        align-items: start;
+      }
+
+      .descripcion-j p {
+
+        padding: 20px;
+        color: #fff;
+      }
+  ////////////////////////////////////////////////////////////////////////////
+  
+  
+  /////////////////cosas mas chiquitas///////////////////////////////////////////////////////////
+  
+  
+  
+  .icono-atras {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+  }
+  
+  .imagen-torneos-jugados {
+    position: relative;
+  
+  }
+  
+  
+  .imagen-torneos-jugados img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-right: 20px;
+  }
+  
+  
+  .texto {
+  position: relative;
+  align-items: start;
+  width: 300px;
+  color: #fff;
+  
+  }
+  
+  .texto-h {
+    max-width: 200px;
+    color: #fff;
+  
+    }
+  
+  
+  .texto2 {
+    border-radius: 50px;
+    width: 350px;
+    color: #fff;
+    padding: 20px;
+    }
+  
+  
+    .icono-config {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+    }
+  
+    .iconos-stats{
+      font-size: 40px;
+  
+    }
+  
+  
+    #icono-user {
+        font-size: 100px;
+        
+    }
+  
+  
+  
+    .titulo-torneos {
+  
+  padding-bottom: 20px;
+    }
+  
+  
+    .card-juegos {
+  
+        padding: 100px;
+  
+    }
+  
+    .game-item img {
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+    }
+  
+    .trending-games-section {
+        margin-top: 20px;
+  
+  
+        }
+  
+        .info-perfil  {
+            margin-top: 20px;
+        }
+  
+  
+        .avatar {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+        }
+  
+        .juegos-per {
+            margin: 15px 0;
+          }
+  
+  
+  
+    
+    
+  ///-----------------------------------------------------------
+  
+  hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  ///-----------------------------------------------------------
+  
+  
+  .profile-info h2 {
+    margin: 10px 0 5px;
+  }
+  
+  .profile-stats {
+    text-align: center;
+  }
+  
+  ion-card {
+    --background: #3e3f4c;
+  }
+  
+  ion-card-title {
+    color: #fff;
+  }
+  
+  ion-slides {
+    height: 200px;
+  }
+  
+  ion-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  
+  
+  
+  
+  
