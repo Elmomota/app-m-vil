@@ -54,7 +54,7 @@ export class RegisterPage implements OnInit {
 
     this.irPagina();
 
-    await this.presentAlert('bienvenido', 'disfrura.');
+    await this.presentAlert('bienvenido', 'disfruta.');
 
 
 

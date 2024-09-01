@@ -1,62 +1,99 @@
-
-<ion-header >
+<ion-header>
   <ion-toolbar>
-
-
     <ion-buttons slot="start">
-      <ion-icon name="search-outline"></ion-icon>
+      <ion-menu-button></ion-menu-button>
     </ion-buttons>
-
-
-
-    <ion-title>Bienvenido de vuelta {{user}}</ion-title>
-    <ion-avatar slot="end"  (click)="Ircuenta()">
+   
+    
+    <ion-avatar slot="end" (click)="Ircuenta()">
       <img src="assets/icon/user-circle-svgrepo-com.png" alt="Avatar">
     </ion-avatar>
-
-
   </ion-toolbar>
-
-
-
 </ion-header>
 <ion-content>
-  
+  <br>
+  <ion-title class="titulo-bienvenida">Bienvenido de vuelta</ion-title>
+  <div class="usuario-nombre">{{user}}</div>
+
   <section class="categories-section">
     <ion-list-header>
-      <ion-label><h6>Categorias</h6></ion-label>
+      <ion-label><h6>Categories</h6></ion-label>
     </ion-list-header>
-    <ion-chip color="purpuraclaro">Accion</ion-chip>
+    <ion-chip color="purpuraclaro">Action</ion-chip>
     <ion-chip color="purpuraclaro">Shooter</ion-chip>
-    <ion-chip color="purpuraclaro">Battle Royale</ion-chip>
-    <ion-chip color="purpuraclaro">Fighting</ion-chip>
-    <ion-chip color="purpuraclaro">Sports</ion-chip>
     <ion-chip color="purpuraclaro">MOBA</ion-chip>
   </section>
 
-  
- <section class="trending-games-section">
+
+  <section class="trending-games-section">
     <ion-list-header>
-      <ion-label><h5>🏆Torneos🏆</h5></ion-label>
+      <ion-label><h5>Torneos</h5></ion-label>
       <ion-button fill="clear" size="small">Ver más</ion-button>
     </ion-list-header>
 
-    <div class="horizontal-scroll" >
+    <div class="horizontal-scroll">
       <div class="game-item" (click)="Valorant()">
-        <img src="assets/img/valorant.jpg" alt="valorant"  />
+        <img src="assets/img/valorant.jpg" alt="valorant" />
       </div>
 
       <div class="game-item" (click)="Fortnite()">
         <img src="assets/img/fornite.jpg" alt="Fortnite" />
       </div>
+
       <div class="game-item" (click)="LOL()">
-        <img src="assets/img/lol2.jpg" alt="league of legends" />
+        <img src="assets/img/lol2.jpg" alt="lol" />
       </div>
+
       <div class="game-item" (click)="Sf()">
-        <img src="assets/img/Street-Fighter-6.jpg" alt="Street Fighter" />
+        <img src="assets/img/Street-Fighter-6.jpg" alt="Street-Fighter-6" />
+      </div>
+
+    </div>
+  </section>
+
+  <section class="news-section">
+    <ion-list-header>
+      <ion-label><h5>Noticias Gamers</h5></ion-label>
+      <ion-button fill="clear" size="small">Ver más</ion-button>
+    </ion-list-header>
+  
+    <div class="news-item">
+      <img src="assets/img/noticias/Black_Myth_Wukong.jpg" alt="Black Myth Wukong" />
+      <div class="news-content">
+        <h6>Black Myth Wukong: Nuevo avance muestra gameplay impresionante</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel elit ac lorem pulvinar sagittis.</p>
+      </div>
+    </div>
+    <div class="news-item">
+      <img src="assets/img/noticias/Black_Myth_Wukong.jpg" alt="Black Myth Wukong" />
+      <div class="news-content">
+        <h6>Black Myth Wukong: Nuevo avance muestra gameplay impresionante</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel elit ac lorem pulvinar sagittis.</p>
+      </div>
+    </div>
+    <div class="news-item">
+      <img src="assets/img/noticias/Black_Myth_Wukong.jpg" alt="Black Myth Wukong" />
+      <div class="news-content">
+        <h6>Black Myth Wukong: Nuevo avance muestra gameplay impresionante</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel elit ac lorem pulvinar sagittis.</p>
+      </div>
+    </div>
+    <div class="news-item">
+      <img src="assets/img/noticias/Black_Myth_Wukong.jpg" alt="Black Myth Wukong" />
+      <div class="news-content">
+        <h6>Black Myth Wukong: Nuevo avance muestra gameplay impresionante</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel elit ac lorem pulvinar sagittis.</p>
+      </div>
+    </div>
+    <div class="news-item">
+      <img src="assets/img/noticias/Black_Myth_Wukong.jpg" alt="Black Myth Wukong" />
+      <div class="news-content">
+        <h6>Black Myth Wukong: Nuevo avance muestra gameplay impresionante</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel elit ac lorem pulvinar sagittis.</p>
       </div>
     </div>
   </section>
- 
 
-</ion-content>
+<ion-footer>
+
+</ion-footer>
