@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AlertController, ToastController } from '@ionic/angular';
+import { AlertController, MenuController, ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-forgot-password',
@@ -10,9 +10,13 @@ import { AlertController, ToastController } from '@ionic/angular';
 export class ForgotPasswordPage implements OnInit {
   eleCorreo: string="";
 
-  constructor( private router:Router,private alertController: AlertController,private toastController: ToastController) { }
+  constructor( private router:Router,private alertController: AlertController,private toastController: ToastController,private menuCtrl: MenuController) { }
 
   ngOnInit() {
+    this.menuCtrl.enable(false); 
+  }
+  ionViewWillLeave() {
+    this.menuCtrl.enable(true); 
   }
   async presentAlert(titulo:string, msj:string) {
     const alert = await this.alertController.create({

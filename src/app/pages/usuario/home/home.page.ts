@@ -26,6 +26,7 @@ export class HomePage implements OnInit {
   Ircuenta(){
     let navigationextras:NavigationExtras={
       state:{ 
+        nombreUser:this.user
       }
     }
     this.router.navigate(['/cuenta'],navigationextras);

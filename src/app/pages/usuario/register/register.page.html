@@ -1,14 +1,9 @@
-<ion-header [translucent]="true">
-  <ion-toolbar color="ultraviolet">
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title color="blancohielo">Registrate</ion-title>
-  </ion-toolbar>
-</ion-header>
-<br><br>
+
 
 <ion-content [fullscreen]="true">
+  <br>
+  <ion-title><h3>Registrate</h3></ion-title>
+  <br>
   <ion-item>
     <ion-input type="email" label="Correo electonico" labelPlacement="floating" placeholder="Ingresa tu Correo electronico" [(ngModel)]="correoEle"></ion-input>
   </ion-item>
@@ -21,7 +16,7 @@
   <ion-item>
     <ion-input type="password" label=" Confirma la Contraseña" value="NeverGonnaGiveYouUp" labelPlacement="floating" placeholder="Confirma la contraseña" [(ngModel)]="confiPassword"><ion-input-password-toggle slot="end"></ion-input-password-toggle></ion-input>
   </ion-item>
-  <ion-button color="purpuranegro" (click)="validarRegistro()">Registrarse</ion-button>
+  <ion-button color="azulelectrico" (click)="validarRegistro()">Registrarse</ion-button>
   <div class="separator"></div> <!-- Línea de separación -->
   <p color="blancohielo">¿Ya tienes una cuenta? 
     <a href="/login">Inicia sesión</a>

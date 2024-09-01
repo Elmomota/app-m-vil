@@ -1,34 +1,140 @@
+ion-header {
+  --background: transparent;
+}
 
-  ion-scroll {
-    white-space: nowrap;
-  }
-  .horizontal-scroll {
-    display: flex;
-    overflow-x: auto;
-    scrollbar-width: none;
-  }  
-  ion-content {
-    --background: #0f0f1a;
-    color: white;
-    padding: 10px;
-  }
-  .categories-section ion-chip {
-    margin-right: 8px;
-     ;
-  }
-  .trending-games-section, .new-games-section {
-    margin-top: 20px;
-  }
+ion-scroll {
+  white-space: nowrap;
+}
+
+.horizontal-scroll {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+ion-content {
+  --background: #1A1C3C; 
+  color: #C9B1BD; 
+  padding: 15px;
+}
+
+.categories-section ion-chip {
+  margin-right: 8px;
+}
+
+ion-chip {
+  margin-right: 10px;
+  background-color: #5A556E; 
+  color: #C9B1BD;
+}
+
+.titulo-bienvenida {
+  text-align: center; 
+  font-size: 24px;
+  color: #fff; 
+}
+.usuario-nombre {
+  text-align: center; /* Centrar el nombre del usuario */
+  font-size: 18px;
+  color: #bdbdbd; /* Color más claro para el nombre del usuario */
+  margin-top: 10px;
+}
+.categories-section {
+  margin-bottom: 20px;
+}
+
+.trending-games-section, .new-games-section {
+  margin-top: 20px;
+}
+
+ion-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #C9B1BD;
+}
 
 .game-item {
-    flex: 0 0 auto;
-    margin-right: 15px;
-    text-align: center;
-    min-width: 120px;
-  }
-  
-  .game-item img {
-    width: 150px;
-    height: 150px;
-    border-radius: 10px;
-  }
+  flex: 0 0 auto;
+  margin-right: 15px;
+  text-align: center;
+  min-width: 120px;
+}
+
+.game-item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #32345A; 
+}
+
+.new-games-section .game-item p {
+  color: #868192; 
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+ion-toolbar {
+  --background: #32345A; 
+  color: #C9B1BD; 
+}
+
+ion-avatar img {
+  border-radius: 50%;
+}
+
+ion-tab-bar {
+  background-color: #32345A;
+}
+
+ion-tab-button {
+  color: #C9B1BD; 
+}
+
+ion-tab-button[aria-selected="true"] ion-icon {
+  color: #BE685D;
+}
+
+.news-section {
+  background-color: #32345A; 
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.news-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #5A556E; 
+  border-radius: 10px;
+}
+
+.news-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 15px;
+  box-shadow: 0px 0px 10px #32345A; 
+}
+
+.news-content h6 {
+  margin: 0;
+  color: #C9B1BD; 
+}
+
+.news-content p {
+  margin: 5px 0 0;
+  color: #868192; 
+  font-size: 14px;
+}
+
+.categories-section, .trending-games-section, .news-section {
+  background-color: #32345A; 
+  border-radius: 15px; 
+  padding: 15px; 
+  margin: 20px 10px; 
+  box-shadow: 0px 4px 8px rgba(50, 52, 90, 0.6); 
+}
