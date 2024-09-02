@@ -62,7 +62,6 @@ ion-content {
       position: fixed;
       width: 100%;
       height: 30%;
-    
     }
   
   .imagen-container img {
@@ -73,6 +72,7 @@ ion-content {
   
     .distribucion{
       display: flex;
+      padding: 0;
     }
     
   
@@ -95,22 +95,15 @@ ion-content {
       border-radius: 40%;
     }
   
-    .texto-h {
-      position: relative;
-      color: #fff;
-      padding-left: 20px;
-      padding-bottom: 20px;
-      }
     
       .descripcion-j {
         margin: 15px 0;
         border-radius: 50px;
-        align-items: start;
+        text-align: start;
+        padding: 20px;
       }
 
       .descripcion-j p {
-
-        padding: 20px;
         color: #fff;
       }
   ////////////////////////////////////////////////////////////////////////////
@@ -139,27 +132,29 @@ ion-content {
     padding-right: 20px;
   }
   
+  .premios {
+    position: relative;
+    align-items: start;
+    color: #fff;
+    padding: 5px;
+    }
   
-  .texto {
-  position: relative;
-  align-items: start;
-  width: 300px;
-  color: #fff;
-  
-  }
-  
+
   .texto-h {
     max-width: 200px;
     color: #fff;
   
     }
+    .bases {
+      color: #fff;
+      }
   
-  
-  .texto2 {
+  .texto {
     border-radius: 50px;
     width: 350px;
     color: #fff;
     padding: 20px;
+    text-align: start;
     }
   
   
@@ -222,7 +217,11 @@ ion-content {
           }
   
   
-  
+          .icono-participante {
+            font-size: 100px;
+
+          }
+          
     
     
   ///-----------------------------------------------------------
@@ -235,7 +234,7 @@ ion-content {
   }
   
   ///-----------------------------------------------------------
-  
+
   
   .profile-info h2 {
     margin: 10px 0 5px;

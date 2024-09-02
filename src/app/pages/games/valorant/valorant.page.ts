@@ -26,4 +26,11 @@ export class ValorantPage implements OnInit {
   home(){
     this.router.navigate(['/home']);
   }
+
+  torneo(){
+    this.router.navigate(['/torneo']);
+  }
+  valorant(){
+    this.router.navigate(['/valorant']);
+  }
 }

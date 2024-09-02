@@ -28,4 +28,10 @@ export class StreetFighterPage implements OnInit {
     this.router.navigate(['/home']);
   }
 
+
+
+  torneo(){
+    this.router.navigate(['/torneo']);
+  }
+
 }

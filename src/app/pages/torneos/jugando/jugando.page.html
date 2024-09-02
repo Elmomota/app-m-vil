@@ -1,13 +1,188 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>jugando</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="general" [fullscreen]="true" >
+ 
+  <!------Imagen atras------------------------------------------------------------------------------------------------>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">jugando</ion-title>
-    </ion-toolbar>
-  </ion-header>
+
+  <div class="imagen-container">
+    <img src="assets/img/Street-Fighter-6.jpg" alt="Street Fighter" />
+  </div>
+
+  <!------------------------------------------------------------------------------------------------------>
+  <!------------bloque grande----------------------------------------------------------------------------->
+  <!------------------------------------------------------------------------------------------------------>
+
+
+  <div class="div-grande">
+
+<!------------------botones------------------------------------------------------------------------------------>
+   
+    <ion-button fill="clear" class="icono-atras" (click)="torneo()">
+        <ion-icon name="arrow-back-circle-outline"></ion-icon>
+    </ion-button>
+<!------------------------------------------------------------------------------------------------------>
+
+      <div class="div-foto-perfil" >
+
+
+          <ion-button fill="clear" class="icono-config">
+              <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+          </ion-button>
+
+  <!-----nombre--------------------------------->
+
+
+
+          <div class="info-perfil">
+            <h4>Copa Soprole</h4>
+          </div>
+          <hr>
+          <h6>Paricipando</h6 >
+
+  <!---Explicacion y contenido--------------->
+
+
+  <div class="bracket">
+    <div class="round">
+        <div class="match"><ion-icon class="icono-participante" name="person-circle"></ion-icon></div>
+        <div class="match"><ion-icon class="icono-participante" name="person-circle"></ion-icon></div>
+        <div class="match"><ion-icon class="icono-participante" name="person-circle"></ion-icon></div>
+        <div class="match"><ion-icon class="icono-participante" name="person-circle"></ion-icon></div></div>
+    <div class="finals">
+        <div class="match">tbd</div>
+        <div class="match">tbd</div>
+    </div>
+    <div class="champion">Campeón</div>
+  </div>
+
+</div>
+
+
+<!-------------------------------------->
+
+
+<hr/>
+
+
+<h6>Proxima partida:14h,15min,14,seg</h6 >
+  <h6>Codigo de sala:FKSL-FJSL-SKDR</h6>
+  <P>*Asegurate estar 5 minutos antes dentro de la sala</P>
+  <hr/>
+
+<h2>Tabla de posiciones</h2>
+
+
+
+
+<!-------------------------------------->
+<hr/>
+
+<ion-card id="torneos">
+        <ion-card-content class="torneos" *ngIf="seleccion == 'Torneos jugados'">
+      
+                <div>
+      
+      <!------items------------------------------------------------------------------------------------------------>
+      <!------------------------------------------------------------------------------------------------------>
+                    <div class="game-item">
+                      <div class="distribucion">
+      
+                        <ion-icon class="icono-participante" name="person-circle"></ion-icon>
+                         <div class="texto">
+                          <h6>Srchitita</h6>
+                          <p>Torneos jugados:42</p>
+                          </div>
+      
+                          
+                        </div>
+                    </div>
+      <!------------------------------------------------------------------------------------------------------>
+      <hr>
+      <!------------------------------------------------------------------------------------------------------>
+      
+                    <div class="game-item">
+                      <div class="distribucion">
+      
+                        <div class="distribucion">
+      
+                          <ion-icon class="icono-participante" name="person-circle"></ion-icon>
+                           <div class="texto">
+                            <h6>Srchitita</h6>
+                            <p>Torneos jugados:42</p>
+                            </div>
+        
+                            
+                          </div>
+      
+                          
+                        </div>
+                    </div>
+      
+      
+      
+      
+      <!------------------------------------------------------------------------------------------------------>
+      <hr>
+      <!------------------------------------------------------------------------------------------------------>
+      
+      
+                    <div class="game-item">
+                      <div class="distribucion">
+      
+                        <ion-icon class="icono-participante" name="person-circle"></ion-icon>
+                         <div class="texto">
+                          <h6>Srchitita</h6>
+                          <p>Torneos jugados:42</p>
+                          </div>
+      
+                          
+                        </div>
+                    </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <!------------------------------------------------------------------------------------------------------>
+      <hr>
+      <!------------------------------------------------------------------------------------------------------>
+      
+                    <div class="game-item">
+                      <div class="distribucion">
+      
+                        <ion-icon class="icono-participante" name="person-circle"></ion-icon>
+                         <div class="texto">
+                          <h6>Srchitita</h6>
+                          <p>Torneos jugados:42</p>
+                          </div>
+      
+                          
+                        </div>
+                    </div>
+      
+      
+                </div>
+        </ion-card-content>
+      
+      
+      
+      
+      
+      </ion-card>
+
+
+
+
+
+
+  </div>
 </ion-content>

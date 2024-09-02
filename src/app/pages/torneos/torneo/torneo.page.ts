@@ -24,7 +24,18 @@ export class TorneoPage implements OnInit {
   ngOnInit() {
   }
   seleccion = 'Torneos jugados';
+
   home(){
     this.router.navigate(['/home']);
   }
+
+ valorant(){
+    this.router.navigate(['/valorant']);
+  }
+
+  jugando(){
+    this.router.navigate(['/jugando']);
+  }
+
+
 }

@@ -26,4 +26,8 @@ export class FortnitePage implements OnInit {
   home(){
     this.router.navigate(['/home']);
   }
+
+  torneo(){
+    this.router.navigate(['/torneo']);
+  }
 }

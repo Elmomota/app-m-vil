@@ -16,7 +16,7 @@
 
 <!------------------botones------------------------------------------------------------------------------------>
    
-    <ion-button fill="clear" class="icono-atras" (click)="home()">
+    <ion-button fill="clear" class="icono-atras" (click)="valorant()">
         <ion-icon name="arrow-back-circle-outline"></ion-icon>
     </ion-button>
 <!------------------------------------------------------------------------------------------------------>
@@ -35,15 +35,17 @@
           <div class="info-perfil">
             <h4>Copa Soprole</h4>
           </div>
-
+          
+          <hr>
 
   <!---Explicacion y contenido--------------->
 <ion-card class="descripcion-j">
   <div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-       Harum omnis, recusandae corrupti veritatis dicta temporibus
-        excepturi accusantium exercitationem assumenda ex at itaque animi
-         unde tenetur doloribus maxime ratione? Atque, qui?</p>
+    <ul class="premios">
+      <li>Premio: 50 bz / 50 usd</li>
+      <li>Inscripción: 50 bz / 50 usd</li>
+      <li>Cupos disponibles: 45/100</li>
+  </ul>
 
 
   </div>
@@ -72,22 +74,11 @@
 <!------------------------lo que cambia-------------------titulos----------------------------------------------------------->
 
 
-<div *ngIf="seleccion == 'Torneos jugados'">
+<div>
 
-            <ion-card-title class="titulo-torneos">Torneos jugados</ion-card-title >
+            <ion-card-title class="titulo-torneos">Jugadores</ion-card-title >
 </div>
 
-
-<div *ngIf="seleccion == 'Historial'">
-
-            <ion-card-title class="titulo-torneos">Historial</ion-card-title >
-</div>
-
-
-<div *ngIf="seleccion == 'Logros'">
-
-            <ion-card-title class="titulo-torneos">Logros</ion-card-title >
-</div>
 
 <!------------------------------------------------------------------------------------------------------>
 
@@ -107,15 +98,11 @@
               <div class="game-item">
                 <div class="distribucion">
 
-                  <img class="imagen-torneos-jugados" src="assets/img/valorant.jpg" alt="Valorant" />
-
-                  <div class="texto">
-                    <h6>Copa Soprole</h6>
-                    <p>Eliminacion directa</p>
-                    <p>Puesto:5°</p>
-                    <P>Fecha: 14/04/202</P>
-
-                  </div>
+                  <ion-icon class="icono-participante" name="person-circle"></ion-icon>
+                   <div class="texto">
+                    <h6>Srchitita</h6>
+                    <p>Torneos jugados:42</p>
+                    </div>
 
                     
                   </div>
@@ -127,134 +114,56 @@
               <div class="game-item">
                 <div class="distribucion">
 
-                  <img class="imagen-torneos-jugados" src="assets/img/lol2.jpg" alt="Valorant" />
+                  <div class="distribucion">
 
-                  <div class="texto">
-                    <h6>Copa Soprole</h6>
-                    <p>Eliminacion directa</p>
-                    <p>Puesto:5°</p>
-                    <P>Fecha: 14/04/202</P>
-
-                  </div>
-
-                  </div>
-
-
-              </div>
-<!------------------------------------------------------------------------------------------------------>
-<hr>
-<!------------------------------------------------------------------------------------------------------>
-              <div class="game-item">
-                <div class="distribucion">
-                  
-                  <img class="imagen-torneos-jugados" src="assets/img/fornite.jpg" alt="Valorant" />
-
-                  <div class="texto">
-                    <h6>Copa Soprole</h6>
-                    <p>Eliminacion directa</p>
-                    <p>Puesto:5°</p>
-                    <P>Fecha: 14/04/202</P>
-
-                  </div>
+                    <ion-icon class="icono-participante" name="person-circle"></ion-icon>
+                     <div class="texto">
+                      <h6>Srchitita</h6>
+                      <p>Torneos jugados:42</p>
+                      </div>
+  
+                      
                     </div>
-
-
-              </div>
-<!------------------------------------------------------------------------------------------------------>
-<hr>
-<!------------------------------------------------------------------------------------------------------>
-
-              <div class="game-item">
-                <div class="distribucion">
-
-                  <img class="imagen-torneos-jugados" src="assets/img/lol2.jpg" alt="Valorant" />
-
-                  <div class="texto">
-                    <h6>Copa Soprole</h6>
-                    <p>Eliminacion directa</p>
-                    <p>Puesto:5°</p>
-                    <P>Fecha: 14/04/202</P>
-
-                  </div>
-                  </div>
-
-
-              </div>
-
-
-          </div>
-  </ion-card-content>
-
-
-<!------------------------------------------------------------------------------------------------------>
-<!-----------------------------parte historial------------------------------------------------------------------------->
-<!------------------------------------------------------------------------------------------------------>
-
-
-<ion-card id="torneos">
-  <ion-card-content class="historial" *ngIf="seleccion == 'Historial'">
-
-          <div>
-
-<!------items------------------------------------------------------------------------------------------------>
-<!------------------------------------------------------------------------------------------------------>
-              <div class="game-item-historial">
-                <div class="distribucion-historial">
-
-                  <img class="imagen-historial" src="assets/img/valorant.jpg" alt="Valorant" />
-
-                  <div class="texto-h">
-                    <h6>Valorant</h6>
-                    <p >Victoria</p>
-                    <p>Mapa:icebox</p>
-
-
-
-                  </div>
 
                     
                   </div>
               </div>
+
+
+
+
 <!------------------------------------------------------------------------------------------------------>
 <hr>
 <!------------------------------------------------------------------------------------------------------>
 
+
               <div class="game-item">
                 <div class="distribucion">
 
-                  <img class="imagen-torneos-jugados" src="assets/img/lol2.jpg" alt="Valorant" />
-
-                  <div class="texto">
-                    <h6>Valorant</h6>
-                    <p>Mapa:icebox</p>
-                    <p>Victoria</p>
-                    <P>Fecha: 14/04/202</P>
-
-                  </div>
-
-                  </div>
-
-
-              </div>
-<!------------------------------------------------------------------------------------------------------>
-<hr>
-<!------------------------------------------------------------------------------------------------------>
-              <div class="game-item">
-                <div class="distribucion">
-                  
-                  <img class="imagen-torneos-jugados" src="assets/img/fornite.jpg" alt="Valorant" />
-
-                  <div class="texto">
-                    <h6>Valorant</h6>
-                    <p>Mapa:icebox</p>
-                    <p>Victoria</p>
-                    <P>Fecha: 14/04/202</P>
-
-                  </div>
+                  <ion-icon class="icono-participante" name="person-circle"></ion-icon>
+                   <div class="texto">
+                    <h6>Srchitita</h6>
+                    <p>Torneos jugados:42</p>
                     </div>
 
-
+                    
+                  </div>
               </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!------------------------------------------------------------------------------------------------------>
 <hr>
 <!------------------------------------------------------------------------------------------------------>
@@ -262,40 +171,35 @@
               <div class="game-item">
                 <div class="distribucion">
 
-                  <img class="imagen-torneos-jugados" src="assets/img/lol2.jpg" alt="Valorant" />
+                  <ion-icon class="icono-participante" name="person-circle"></ion-icon>
+                   <div class="texto">
+                    <h6>Srchitita</h6>
+                    <p>Torneos jugados:42</p>
+                    </div>
 
-                  <div class="texto">
-                    <h6>Valorant</h6>
-                    <p>Mapa:icebox</p>
-                    <p>Victoria</p>
-                    <P>Fecha: 14/04/202</P>
-
+                    
                   </div>
-                  </div>
-
-
               </div>
 
 
           </div>
   </ion-card-content>
+
+
+
+
+
+
+
+
+
+
+
+
 </ion-card>
 
 
-
-
-
-
-
-
-</ion-card>
-
-
-
-<!------------------------------------------------------------------------------------------------------>
-<!-----------------------------parte historial------------------------------------------------------------------------->
-<!------------------------------------------------------------------------------------------------------>
-
+<ion-button shape="round" (click)="jugando()">Inscribir</ion-button>
 
 
 <!------------------------------------------------------------------------------------------------------>
@@ -307,16 +211,53 @@
 
 
 
-<ion-card-title class="titulo-torneos">Descripcion Jugador:</ion-card-title >
+<ion-card-title class="titulo-torneos">Bases:</ion-card-title >
 
-<ion-card class="texto2">
+<ion-card>
 
-<div>
-<p >Jugador con experiencia en videojuegos desde los 5 años de edad
-  , participante de varios de los torneos mas importantes de battle zone,
-  soy un activo tengo un estilo de juego agresivo y odio pararme a pensar las cosas mi
-  forma de jugar siempre ha sido apisonar a los demas llendo hacia adelante
-</p>
+<div class="bases">
+
+
+  <p><strong>Descripción del Torneo:</strong></p>
+
+  <p>¡Prepárate para demostrar tus habilidades en el ring virtual con el torneo de <strong>Street Fighter VI</strong>! Este evento reúne a los mejores luchadores de la comunidad para enfrentarse en intensos combates, donde solo los más fuertes sobrevivirán. Ya seas un veterano de la franquicia o un novato con ganas de probar su valía, este torneo es la oportunidad perfecta para demostrar quién es el verdadero campeón.</p>
+  
+  <p><strong>Detalles del Torneo:</strong></p>
+  
+  <ul>
+    <li><strong>Nombre del Torneo:</strong> Batalla de los Guerreros: Street Fighter VI</li>
+    <li><strong>Fecha:</strong> [Inserta la fecha del torneo]</li>
+    <li><strong>Hora de Inicio:</strong> [Inserta la hora de inicio]</li>
+    <li><strong>Formato:</strong> Eliminación directa</li>
+    <li><strong>Plataforma:</strong> [Indica la plataforma, por ejemplo, PS5, PC]</li>
+    <li><strong>Número de Participantes:</strong> [Indica el número máximo de participantes]</li>
+    <li><strong>Inscripción:</strong> [Indica si hay algún costo o el proceso de inscripción]</li>
+  </ul>
+  
+  <p><strong>Premios:</strong></p>
+  
+  <ul>
+    <li><strong>1er Lugar:</strong> [Indica el premio para el primer lugar]</li>
+    <li><strong>2do Lugar:</strong> [Indica el premio para el segundo lugar]</li>
+    <li><strong>3er Lugar:</strong> [Indica el premio para el tercer lugar]</li>
+  </ul>
+  
+  <p><strong>Reglas Básicas:</strong></p>
+  
+  <ul>
+    <li>Todos los combates se jugarán en el modo "Versus" de Street Fighter VI.</li>
+    <li>Cada ronda se jugará al mejor de tres combates.</li>
+    <li>Los participantes deberán estar conectados y listos para jugar a la hora establecida. Los retrasos superiores a 10 minutos pueden resultar en descalificación.</li>
+    <li>Está prohibido cualquier tipo de conducta antideportiva. Esto incluye, pero no se limita a, insultos, trampas o comportamientos tóxicos.</li>
+  </ul>
+  
+  <p>¡No pierdas la oportunidad de ser coronado como el campeón de Street Fighter VI! Inscríbete ahora y prepárate para la batalla.</p>
+  
+
+
+
+
+
 </div>
 
 </ion-card>
