@@ -54,5 +54,8 @@ export class HomePage implements OnInit {
     this.router.navigate(['/new-games']);
   }
 
+  newGamesinfo(){
+    this.router.navigate(['/new-gamesinfo']);
+  }
   
 }

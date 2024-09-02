@@ -69,7 +69,11 @@ const routes: Routes = [
   {
     path: 'new-games',
     loadChildren: () => import('./pages/new-games/new-games.module').then( m => m.NewGamesPageModule)
+  },  {
+    path: 'new-gamesinfo',
+    loadChildren: () => import('./pages/new-gamesinfo/new-gamesinfo.module').then( m => m.NewGamesinfoPageModule)
   },
+
 
 
 

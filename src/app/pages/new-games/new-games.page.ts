@@ -30,4 +30,7 @@ export class NewGamesPage implements OnInit {
     }
     this.router.navigate(['/cuenta'],navigationextras);
   }
+  newGamesinfo(){
+    this.router.navigate(['/new-gamesinfo']);
+  }
 }
