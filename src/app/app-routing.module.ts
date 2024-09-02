@@ -59,9 +59,14 @@ const routes: Routes = [
     loadChildren: () => import('./pages/torneos/torneo/torneo.module').then( m => m.TorneoPageModule)
   },
   {
-    path: 'torneos',
-    loadChildren: () => import('./page/torneos/torneos/torneos.module').then( m => m.TorneosPageModule)
+    path: 'admin',
+    loadChildren: () => import('./pages/app/admin/admin.module').then( m => m.AdminPageModule)
+  },  {
+    path: 'admin-login',
+    loadChildren: () => import('./pages/app/admin-login/admin-login.module').then( m => m.AdminLoginPageModule)
   },
+
+
 
   
 

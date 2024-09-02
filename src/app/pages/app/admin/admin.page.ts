@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-admin',
@@ -6,8 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./admin.page.scss'],
 })
 export class AdminPage implements OnInit {
+  adminUser:string="";
 
-  constructor() { }
+  constructor(private router: Router, private activedrouter: ActivatedRoute) {
+    this.activedrouter.queryParams.subscribe(param =>{
+      //validamos si llega o no la informacion
+      if(this.router.getCurrentNavigation()?.extras.state){
+        
+        this.adminUser = this.router.getCurrentNavigation()?.extras?.state?.['nombreUser'];
+        
+      }
+    });
+   }
 
   ngOnInit() {
   }

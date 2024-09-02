@@ -9,6 +9,10 @@ export class AppComponent {
 
 
     { title: 'Home', url: '/home', icon: 'home' },
+    { title: 'Torneos', url: '/torneo', icon: 'trophy' },
+    { title: 'Noticias Games', url: '/new-games', icon: 'mail'},
+    { title: 'Mi Perfil', url: '/cuenta', icon: 'person' },
+   
     
   ];
   

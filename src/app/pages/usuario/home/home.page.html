@@ -17,9 +17,9 @@
 
   <section class="categories-section">
     <ion-list-header>
-      <ion-label><h6>Categories</h6></ion-label>
+      <ion-label><h6>Categorias</h6></ion-label>
     </ion-list-header>
-    <ion-chip color="purpuraclaro">Action</ion-chip>
+    <ion-chip color="purpuraclaro">Accion</ion-chip>
     <ion-chip color="purpuraclaro">Shooter</ion-chip>
     <ion-chip color="purpuraclaro">MOBA</ion-chip>
   </section>
@@ -28,7 +28,7 @@
   <section class="trending-games-section">
     <ion-list-header>
       <ion-label><h5>Torneos</h5></ion-label>
-      <ion-button fill="clear" size="small">Ver más</ion-button>
+      <ion-button fill="clear" size="small" (click)="torneos()">Ver más</ion-button>
     </ion-list-header>
 
     <div class="horizontal-scroll">
@@ -54,7 +54,7 @@
   <section class="news-section">
     <ion-list-header>
       <ion-label><h5>Noticias Gamers</h5></ion-label>
-      <ion-button fill="clear" size="small">Ver más</ion-button>
+      <ion-button fill="clear" size="small" (click)="newGames()">Ver más</ion-button>
     </ion-list-header>
   
     <div class="news-item">

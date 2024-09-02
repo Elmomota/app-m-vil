@@ -1,0 +1,18 @@
+<ion-content [fullscreen]="true">
+  <br>
+  <ion-title ><h3>Inicio de Sesión de Admin</h3></ion-title>
+  <br>
+  <ion-item>
+    <ion-input label="Nombre de Admin" labelPlacement="floating" placeholder="Ingresa tu nombre de Admin" [(ngModel)]="newNameUser"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type="password" label="Contraseña" value="NeverGonnaGiveYouUp" labelPlacement="floating" placeholder="Ingresa tu contraseña" [(ngModel)]="password"><ion-input-password-toggle slot="end"></ion-input-password-toggle></ion-input>
+  </ion-item>
+  <ion-button color="purpuranegro" (click)="irPagina()">Iniciar sesión</ion-button>
+  <p color="blancohielo">
+    <a href="/forgot-password">¿Problemas con tu cuenta?</a>
+  </p>
+
+ 
+
+</ion-content>

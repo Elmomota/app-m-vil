@@ -2,12 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationExtras, Router } from '@angular/router';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.page.html',
-  styleUrls: ['./home.page.scss'],
+  selector: 'app-new-games',
+  templateUrl: './new-games.page.html',
+  styleUrls: ['./new-games.page.scss'],
 })
-export class HomePage implements OnInit {
-
+export class NewGamesPage implements OnInit {
   user:string="";
 
   constructor(private router: Router, private activedrouter: ActivatedRoute) {
@@ -31,28 +30,4 @@ export class HomePage implements OnInit {
     }
     this.router.navigate(['/cuenta'],navigationextras);
   }
-  
-
-
-
-  Valorant(){
-    this.router.navigate(['/valorant']);
-  }
-  Fortnite(){
-    this.router.navigate(['/fortnite']);
-  }
-  LOL(){
-    this.router.navigate(['/league-of-legends']);
-  }
-  Sf(){
-    this.router.navigate(['/street-fighter']);
-  }
-  torneos(){
-    this.router.navigate(['/torneo']);
-  }
-  newGames(){
-    this.router.navigate(['/new-games']);
-  }
-
-  
 }

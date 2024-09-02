@@ -1,3 +1,8 @@
+ion-title {
+  text-align: center; 
+  font-size: 24px;
+  color: #fff; 
+}
 .welcome-container {
     display: flex;
     justify-content: center;
@@ -14,4 +19,6 @@
     text-decoration: underline;
     color: var(--ion-color-primary);
   }
-  
+  ion-content, ion-footer {
+    --background: #1A1C3C; 
+  }
