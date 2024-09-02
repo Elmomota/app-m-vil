@@ -61,9 +61,14 @@ const routes: Routes = [
   {
     path: 'admin',
     loadChildren: () => import('./pages/app/admin/admin.module').then( m => m.AdminPageModule)
-  },  {
+  },
+  {
     path: 'admin-login',
     loadChildren: () => import('./pages/app/admin-login/admin-login.module').then( m => m.AdminLoginPageModule)
+  },
+  {
+    path: 'new-games',
+    loadChildren: () => import('./pages/new-games/new-games.module').then( m => m.NewGamesPageModule)
   },
 
 
