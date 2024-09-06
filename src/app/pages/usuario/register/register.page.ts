@@ -51,6 +51,10 @@ export class RegisterPage implements OnInit {
       await this.presentAlert('Contraseñas no coinciden', 'Las contraseñas ingresadas no son iguales.');
       return;
     }
+    if (this.newPassword !== this.confiPassword) {
+      await this.presentAlert('Contraseñas no coinciden', 'Las contraseñas ingresadas no son iguales.');
+      return;
+    }
 
     this.irPagina();
 

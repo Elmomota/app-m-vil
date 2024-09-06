@@ -39,17 +39,31 @@ export class LoginPage implements OnInit {
 
     await toast.present();
   }
+
+  /*------------------------------------------------------------*/
   async validarRegistro() {
     if (this.nameUser === "" || this.password === "" ) {
       await this.presentAlert('Campos incompletos', 'Por favor, rellena todos los campos obligatorios.');
       return;
     }
+    if (this.nameUser.length<5) {
+      await this.presentAlert('contraseña invalida', 'Por favor, intenta nuevamente.');
+      return;
+    }
+
 
     this.irPagina();
 
-    await this.presentAlert('bienvenido', 'disfruta.');
+    await this.presentAlert('Bienvenido', 'disfruta.');
 
   }
+
+  async x() {
+    
+      
+    }
+  
+  /*------------------------------------------------------------*/
 
   irPagina(){
     let navigationextras:NavigationExtras={

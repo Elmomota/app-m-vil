@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'inicio',
+    redirectTo: '',
     pathMatch: 'full'
   },
 
@@ -69,9 +69,14 @@ const routes: Routes = [
   {
     path: 'new-games',
     loadChildren: () => import('./pages/new-games/new-games.module').then( m => m.NewGamesPageModule)
-  },  {
+  },
+  {
     path: 'new-gamesinfo',
     loadChildren: () => import('./pages/new-gamesinfo/new-gamesinfo.module').then( m => m.NewGamesinfoPageModule)
+  },
+  {
+    path: '**',
+    loadChildren: () => import('./pages/not-found/not-found.module').then( m => m.NotFoundPageModule)
   },
 
 
