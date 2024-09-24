@@ -30,15 +30,20 @@ export class ForgotPasswordPage implements OnInit {
   
   async enviarConfirmacion() {
     if (this.eleCorreo) {
+      const emailRegex = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
+      if (!emailRegex.test(this.eleCorreo)) {
+        await this.presentAlert('Error', 'Por favor, ingresa un correo electrónico válido.');
+        return;
+      }
+  
+
       await this.presentAlert('Correo enviado', `Correo de recuperación enviado a: ${this.eleCorreo}`);
-      
-      // Aquí puedes agregar la lógica para enviar el correo de recuperación
+      this.irPagina();
     } else {
       await this.presentAlert('Error', 'Por favor, ingresa un correo electrónico válido.');
-      return;
     }
-    this.irPagina();
   }
+  
 
   irPagina(){
 

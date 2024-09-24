@@ -73,6 +73,10 @@ const routes: Routes = [
     path: 'new-gamesinfo',
     loadChildren: () => import('./pages/new-gamesinfo/new-gamesinfo.module').then( m => m.NewGamesinfoPageModule)
   },
+  {
+    path: 'recuperacion-pass',
+    loadChildren: () => import('./pages/usuario/recuperacion-pass/recuperacion-pass.module').then( m => m.RecuperacionPassPageModule)
+  },
 
 
 
