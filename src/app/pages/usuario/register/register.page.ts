@@ -49,28 +49,7 @@ export class RegisterPage implements OnInit {
       await this.presentAlert('Campos incompletos', 'Por favor, rellena todos los campos obligatorios.');
       return;
     }
-  
-    
-    const emailRegex = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
-    if (!emailRegex.test(this.correoEle)) {
-      await this.presentAlert('Correo inválido', 'Por favor, ingresa un correo electrónico válido.');
-      return;
-    }
-  
-    
-    if (this.newPassword.length < 8) {
-      await this.presentAlert('Contraseña corta', 'La contraseña debe tener al menos 8 caracteres.');
-      return;
-    }
-  
-    
-    const strongPasswordRegex = /^(?=.*[0-9])(?=.*[!@#$%^&*])/;
-    if (!strongPasswordRegex.test(this.newPassword)) {
-      await this.presentAlert('Contraseña débil', 'La contraseña debe incluir al menos un número y un carácter especial.');
-      return;
-    }
-  
-   
+
     if (this.newPassword !== this.confiPassword) {
       await this.presentAlert('Contraseñas no coinciden', 'Las contraseñas ingresadas no son iguales.');
       return;
