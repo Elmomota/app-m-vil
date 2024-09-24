@@ -44,7 +44,7 @@ export class RegisterPage implements OnInit {
     await toast.present();
   }
   async validarRegistro() {
-    // Check if all fields are filled
+   
     if (this.correoEle === "" || this.newNameUser === "" || this.newPassword === "" || this.confiPassword === "") {
       await this.presentAlert('Campos incompletos', 'Por favor, rellena todos los campos obligatorios.');
       return;
