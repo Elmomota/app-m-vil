@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Modificar Torneo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form *ngIf="torneo" (ngSubmit)="guardarCambios()">
+    <ion-item>
+      <ion-label position="floating">Nombre del Torneo</ion-label>
+      <ion-input [(ngModel)]="torneo.nombre" name="nombre" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Juego</ion-label>
+      <ion-input [(ngModel)]="torneo.juego" name="juego" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Estado</ion-label>
+      <ion-select [(ngModel)]="torneo.estado" name="estado" required>
+        <ion-select-option value="Próximo">Próximo</ion-select-option>
+        <ion-select-option value="En curso">En curso</ion-select-option>
+        <ion-select-option value="Finalizado">Finalizado</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Equipos Inscritos</ion-label>
+      <ion-input type="number" [(ngModel)]="torneo.numEquipos" name="numEquipos" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Fecha de Inicio</ion-label>
+      <ion-datetime [(ngModel)]="torneo.fechaInicio" name="fechaInicio" display-format="YYYY-MM-DD" required></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Imagen</ion-label>
+      <input type="file" (change)="onFileSelected($event)" accept="image/*">
+    </ion-item>
+
+    <ion-button expand="full" type="submit">Guardar Cambios</ion-button>
+  </form>
+</ion-content>

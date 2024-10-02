@@ -79,19 +79,17 @@ const routes: Routes = [
   loadChildren: () => import('./pages/usuario/recuperacion-pass/recuperacion-pass.module').then( m => m.RecuperacionPassPageModule)
   },
   {
+    path: 'detalles-torneo/:id',
+    loadChildren: () => import('./pages/app/detalles-torneo/detalles-torneo.module').then(m => m.DetallesTorneoPageModule)
+  },
+  {
+    path: 'modificar-torneo',
+    loadChildren: () => import('./pages/app/modificar-torneo/modificar-torneo.module').then( m => m.ModificarTorneoPageModule)
+  },
+  {
     path: '**',
     loadChildren: () => import('./pages/not-found/not-found.module').then( m => m.NotFoundPageModule)
-  },
-
-
-
-
-  
-
-
-
-  
-
+  }, 
 
 ];
 

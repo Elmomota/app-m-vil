@@ -1,75 +1,27 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>Panel de Administración</ion-title>
+    <ion-title>Perfil del Administrador</ion-title>
   </ion-toolbar>
 </ion-header>
-<br><br>
-<ion-content [fullscreen]="true">
 
-  <ion-title class="titulo-bienvenida">Bienvenido</ion-title>
-  <div class="usuario-nombre">{{adminUser}}</div>
-  <br>
-
-  <ion-toolbar>
-    <ion-title>Perfil de organizacion de Torneos de BattleZone </ion-title>
-  </ion-toolbar>
-
-
-  <section class="news-section">
-    <ion-header collapse="condense">
-      <ion-toolbar>
-        <ion-title size="large">Panel de Administración</ion-title>
-      </ion-toolbar>
-    </ion-header>
-
-    <br>
-    <div class="news-item">
-      <img src="assets/img/torneos/torneo-valo.png" alt="torneo-valo" />
-      <div class="news-content">
-        <h6>VALORANT Champions: El evento más esperado del año</h6>
-        <p>El torneo VALORANT Champions está atrayendo la atención de la comunidad gamer con su emocionante formato y premios millonarios.</p>
-        <div class="teams-info">
-          <ion-icon name="people-outline"></ion-icon>
-          <span>16 equipos inscritos</span>
-        </div>
-      </div>
-    </div>
-    <div class="news-item">
-      <img src="assets/img/torneos/torneo-street-fighter.jpg" alt="torneo-street-fighter" />
-      <div class="news-content">
-        <h6>Street Fighter VI: Nuevo personaje revelado en el último torneo</h6>
-        <p>El reciente torneo de Street Fighter VI dejó a los fans emocionados con la revelación de un nuevo personaje que promete cambiar el meta del juego.</p>
-        <div class="teams-info">
-          <ion-icon name="people-outline"></ion-icon>
-          <span>8 equipos inscritos</span>
-        </div>
-      </div>
-    </div>
-    <div class="news-item">
-      <img src="assets/img/torneos/torneo-fortnite.jpg" alt="torneo-fortnite" />
-      <div class="news-content">
-        <h6>Fortnite World Cup: Los mejores jugadores compiten por el título</h6>
-        <p>La Fortnite World Cup vuelve este año con más acción y un pozo de premios que ha alcanzado cifras récord en la historia del juego.</p>
-        <div class="teams-info">
-          <ion-icon name="people-outline"></ion-icon>
-          <span>24 equipos inscritos</span>
-        </div>
-      </div>
-    </div>
-    <div class="news-item">
-      <img src="assets/img/torneos/torneo-lol.jpg" alt="torneo-lol" />
-      <div class="news-content">
-        <h6>League of Legends Worlds: ¿Quién será el próximo campeón?</h6>
-        <p>El campeonato mundial de League of Legends está en su apogeo, con equipos de todo el mundo compitiendo por la gloria y un lugar en la historia del juego.</p>
-        <div class="teams-info">
-          <ion-icon name="people-outline"></ion-icon>
-          <span>32 equipos inscritos</span>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  
-
-
+<ion-content>
+  <!-- Lista de torneos creados -->
+  <ion-card *ngFor="let torneo of torneos" (click)="verDetallesTorneo(torneo)">
+    <ion-card-header>
+      <ion-card-title>{{torneo.nombre}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label>
+          <p><strong>Juego:</strong> {{torneo.juego}}</p>
+          <p><strong>Estado:</strong> {{torneo.estado}}</p>
+          <p><strong>Equipos Inscritos:</strong> {{torneo.numEquipos}}</p>
+          <p><strong>Fecha de Inicio:</strong> {{torneo.fechaInicio | date}}</p>
+        </ion-label>
+        <ion-thumbnail slot="end">
+          <img [src]="torneo.imagen" alt="{{torneo.nombre}}">
+        </ion-thumbnail>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

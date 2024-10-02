@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{torneo?.nombre}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngIf="torneo">
+    <ion-card-header>
+      <ion-card-title>{{torneo.nombre}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-img [src]="torneo.imagen" alt="{{torneo.nombre}}"></ion-img>
+      <p><strong>Juego:</strong> {{torneo.juego}}</p>
+      <p><strong>Estado:</strong> {{torneo.estado}}</p>
+      <p><strong>Equipos Inscritos:</strong> {{torneo.numEquipos}}</p>
+      <p><strong>Fecha de Inicio:</strong> {{torneo.fechaInicio | date}}</p>
+      <ion-button expand="full" color="primary" (click)="modificarTorneo()">Modificar</ion-button>
+      <ion-button expand="full" color="danger" (click)="eliminarTorneo()">Eliminar</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
