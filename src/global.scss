@@ -36,3 +36,77 @@
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
 
+
+ion-title {
+    text-align: center;
+    
+    color: #fff;
+  
+  }
+  
+  
+  ion-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 16px;
+    --background: #1A1C3C;
+    
+  
+  }
+  
+  ion-item {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    --background: #868192; /* Color gris violáceo */
+    --border-radius: 12px;
+  }
+  
+  ion-input {
+    width: 100%;
+    padding: 12px;
+    --padding-start: 12px;
+    --padding-end: 12px;
+  }
+  
+  ion-button {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    --border-radius: 12px;
+    --background: #5A556E; /* Color gris oscuro con un matiz púrpura */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  p {
+    color: #C9B1BD; /* Color rosa pálido */
+    text-align: center;
+    margin-top: 16px;
+  
+    a {
+      color: #00fff2; /* Color rojo-marrón */
+      text-decoration: none;
+    }
+  }
+  
+  .separator {
+    width: 100%;
+    max-width: 400px;
+    height: 1px;
+    background-color: #ffffff; /* Color rosa pálido */
+    margin: 24px 0;
+  }
+  
+  p.register {
+    margin-top: 8px;
+  }
+  

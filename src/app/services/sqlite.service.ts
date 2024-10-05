@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { SQLite, SQLiteObject } from '@awesome-cordova-plugins/sqlite/ngx';
-import { Torneo } from './torneo';
-  // Asegúrate de que la ruta sea correcta
+import { Torneo } from './torneo'; // Asegúrate de que la ruta sea correcta
+import { TorneoService } from './torneo-service.service';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +9,7 @@ import { Torneo } from './torneo';
 export class SqliteService {
   private dbInstance: SQLiteObject | null = null;
 
-  constructor(private sqlite: SQLite) {}
+  constructor(private sqlite: SQLite, private torneoService: TorneoService) {}
 
   async initDB() {
     try {
@@ -37,7 +37,8 @@ export class SqliteService {
     if (this.dbInstance) {
       const sql = `INSERT INTO torneos (nombre, juego, estado, numEquipos, fechaInicio, imagen) VALUES (?, ?, ?, ?, ?, ?)`;
       const values = [torneo.nombre, torneo.juego, torneo.estado, torneo.numEquipos, torneo.fechaInicio, torneo.imagen];
-      return this.dbInstance.executeSql(sql, values);
+      await this.dbInstance.executeSql(sql, values);
+      this.torneoService.notificarTorneoAgregado(); // Notificar que se ha agregado un torneo
     } else {
       throw new Error('Database is not initialized');
     }
@@ -51,6 +52,26 @@ export class SqliteService {
         torneos.push(res.rows.item(i));
       }
       return torneos;
+    } else {
+      throw new Error('Database is not initialized');
+    }
+  }
+
+  async actualizarTorneo(torneo: Torneo): Promise<void> {
+    if (this.dbInstance) {
+      const sql = `UPDATE torneos SET nombre = ?, juego = ?, estado = ?, numEquipos = ?, fechaInicio = ?, imagen = ? WHERE id = ?`;
+      const values = [torneo.nombre, torneo.juego, torneo.estado, torneo.numEquipos, torneo.fechaInicio, torneo.imagen, torneo.id];
+      await this.dbInstance.executeSql(sql, values);
+    } else {
+      throw new Error('Database is not initialized');
+    }
+  }
+
+  async eliminarTorneo(id: number): Promise<void> {
+    if (this.dbInstance) {
+      const sql = `DELETE FROM torneos WHERE id = ?`;
+      await this.dbInstance.executeSql(sql, [id]);
+      this.torneoService.notificarTorneoEliminado();
     } else {
       throw new Error('Database is not initialized');
     }

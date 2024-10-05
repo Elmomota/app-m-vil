@@ -87,9 +87,14 @@ const routes: Routes = [
     loadChildren: () => import('./pages/app/modificar-torneo/modificar-torneo.module').then( m => m.ModificarTorneoPageModule)
   },
   {
+    path: 'agregar-torneo',
+    loadChildren: () => import('./pages/app/agregar-torneo/agregar-torneo.module').then( m => m.AgregarTorneoPageModule)
+  },
+  {
     path: '**',
     loadChildren: () => import('./pages/not-found/not-found.module').then( m => m.NotFoundPageModule)
-  }, 
+  },   
+
 
 ];
 

@@ -1,5 +1,40 @@
-ion-content {
-    --background: #1A1C3C; 
-    color: #fff; 
-    padding: 15px;
-  }
+.not-found-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background: #1A1C3C; // Fondo oscuro
+  color: #fff; // Color del texto blanco
+  padding: 15px; // Espaciado
+}
+
+.not-found-container {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1); // Fondo semitransparente para destacar el contenedor
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); // Sombra suave
+}
+
+.not-found-image {
+  width: 200px; // Ajusta según tus necesidades
+  margin-bottom: 20px;
+}
+
+.not-found-title {
+  font-size: 24px;
+  color: #fff; // Color del texto
+  margin-bottom: 10px;
+}
+
+.not-found-message {
+  font-size: 16px;
+  color: #ddd; // Color del texto secundario
+  margin-bottom: 20px;
+}
+
+.not-found-button {
+  background-color: #3880ff; // Color del botón
+  color: #fff; // Color del texto del botón
+  border-radius: 5px; // Bordes redondeados
+}

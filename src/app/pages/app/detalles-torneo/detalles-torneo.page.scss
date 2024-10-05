@@ -1,0 +1,26 @@
+.torneo-card {
+    background-color: #5A556E; /* Fondo de la tarjeta */
+    color: #C9B1BD; /* Color del texto */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
+    margin: 15px; /* Espaciado alrededor de la tarjeta */
+  }
+  
+  ion-card-header {
+    text-align: center; /* Centrar el texto del encabezado */
+  }
+  
+  ion-card-title {
+    font-size: 24px; /* Tamaño de fuente del título */
+    font-weight: bold; /* Negrita para el título */
+  }
+  
+  ion-button {
+    margin-top: 10px; /* Espaciado entre botones */
+  }
+  
+  ion-img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho de la tarjeta */
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+  }
+  

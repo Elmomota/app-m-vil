@@ -1,63 +1,21 @@
+.content-container {
+  padding: 15px;
+  background-color: #32345A; /* Fondo del contenedor */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
+}
 
-ion-scroll {
-    white-space: nowrap;
-  }
-.news-section {
-    background-color: #32345A; 
-    padding: 15px;
-    border-radius: 15px;
-    margin-top: 20px;
-  }
-  
-  .news-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #5A556E; 
-    border-radius: 10px;
-  }
-  
-  .news-item img {
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-    object-fit: cover;
-    margin-right: 15px;
-    box-shadow: 0px 0px 10px #32345A; 
-  }
-  
-  .news-content h6 {
-    margin: 0;
-    color: #C9B1BD; 
-  }
-  
-  .news-content p {
-    margin: 5px 0 0;
-    color: #868192; 
-    font-size: 14px;
-  }
-.news-section {
-    background-color: #32345A; 
-    border-radius: 15px; 
-    padding: 15px; 
-    margin: 20px 10px; 
-    box-shadow: 0px 4px 8px rgba(50, 52, 90, 0.6); 
-  }
-  .teams-info {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-  }
-  
-  .teams-info ion-icon {
-    margin-right: 5px;
-    font-size: 18px;
-    color: #0d85ee;
-  }
-  
-  .teams-info span {
-    font-size: 14px;
-    color: #0d85ee;
-  }
-  
+.torneo-card {
+  margin-bottom: 15px; /* Espaciado entre las tarjetas */
+  background-color: #5A556E; /* Fondo de la tarjeta */
+  color: #C9B1BD; /* Color del texto en la tarjeta */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+.torneo-card ion-card-title {
+  font-size: 18px; /* Tamaño de fuente del título */
+}
+
+.torneo-card ion-label p {
+  margin: 0; /* Quitar margen para mejor alineación */
+}

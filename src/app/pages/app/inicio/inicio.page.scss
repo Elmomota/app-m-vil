@@ -1,31 +1,21 @@
+ion-content, ion-footer {
+  --background: #01131f; /* Fondo oscuro */
+  color: white; /* Texto blanco */
+}
+
 ion-title {
   text-align: center; 
   font-size: 24px;
-  color: #fff; 
+  color: white; /* Texto blanco */
 }
-.welcome-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10%;
-  }
-  
-  ion-footer p {
-    font-size: 0.8rem;
-    margin: 0;
-  }
-  
-  ion-footer a {
-    text-decoration: underline;
-    color: var(--ion-color-primary);
-  }
-  ion-content, ion-footer {
-    --background: #01131f; 
-  }
-  .logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
 
-  }
+ion-footer p {
+  font-size: 0.8rem;
+  margin: 0;
+  color: white; /* Texto blanco */
+}
+
+ion-footer a {
+  text-decoration: underline;
+  color: var(--ion-color-primary); /* Ajusta el color según sea necesario */
+}

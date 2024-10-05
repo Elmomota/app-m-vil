@@ -1,0 +1,20 @@
+ion-content {
+    --background: #1A1C3C; /* Color de fondo */
+    color: #C9B1BD; /* Color del texto */
+    padding: 15px; /* Espaciado */
+  }
+  
+  ion-button {
+    margin-top: 15px; /* Espacio superior para el botón */
+  }
+  
+  ion-item {
+    margin-bottom: 10px; /* Espacio inferior entre los items */
+  }
+  
+  ion-input, ion-select {
+    background-color: #5A556E; /* Color de fondo de los inputs */
+    color: #C9B1BD; /* Color del texto de los inputs */
+    border-radius: 5px; /* Bordes redondeados */
+  }
+  

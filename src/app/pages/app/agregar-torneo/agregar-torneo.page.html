@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Agregar Torneo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="form-container">
+    <form (ngSubmit)="agregarTorneo()">
+      <ion-item>
+        <ion-label position="floating">Nombre del Torneo</ion-label>
+        <ion-input [(ngModel)]="nuevoTorneo.nombre" name="nombre" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Juego</ion-label>
+        <ion-input [(ngModel)]="nuevoTorneo.juego" name="juego" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Estado</ion-label>
+        <ion-select [(ngModel)]="nuevoTorneo.estado" name="estado" required>
+          <ion-select-option value="Próximo">Próximo</ion-select-option>
+          <ion-select-option value="En curso">En curso</ion-select-option>
+          <ion-select-option value="Finalizado">Finalizado</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Equipos Inscritos</ion-label>
+        <ion-input type="number" [(ngModel)]="nuevoTorneo.numEquipos" name="numEquipos" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Fecha de Inicio</ion-label>
+        <ion-datetime [(ngModel)]="nuevoTorneo.fechaInicio" name="fechaInicio" display-format="YYYY-MM-DD" required></ion-datetime>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Imagen</ion-label>
+        <input type="file" (change)="onFileSelected($event)" accept="image/*">
+      </ion-item>
+
+      <ion-button expand="full" type="submit" class="submit-button">Agregar Torneo</ion-button>
+    </form>
+  </div>
+</ion-content>
+

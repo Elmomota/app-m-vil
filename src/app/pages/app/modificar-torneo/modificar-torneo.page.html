@@ -4,7 +4,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
   <form *ngIf="torneo" (ngSubmit)="guardarCambios()">
     <ion-item>
       <ion-label position="floating">Nombre del Torneo</ion-label>
@@ -37,7 +37,7 @@
 
     <ion-item>
       <ion-label position="floating">Imagen</ion-label>
-      <input type="file" (change)="onFileSelected($event)" accept="image/*">
+      <input type="file" (change)="onFileSelected($event)" accept="image/*" />
     </ion-item>
 
     <ion-button expand="full" type="submit">Guardar Cambios</ion-button>
